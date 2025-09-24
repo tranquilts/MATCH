@@ -3,13 +3,13 @@
 ## **User Requirements** 
 ## **System Requirements**
 ## **User Profiles**
-### **User Profile 1**
-## Michelle Whitworth
+## **User Profile 1**
+#### Michelle Whitworth
 An old lady who loves to play crosswords with her friends and enjoys a challenge as she believes in keeping her brain sharp and active.
  
 
-### **User Profile 2**
-## Phillip Maroony
+## **User Profile 2**
+#### Phillip Maroony
 A 16 year old boy 
 
 
