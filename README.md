@@ -4,7 +4,7 @@
 ## **System Requirements**
 ## **User Profiles**
 # *User Profile 1*
-# **User Profile 2*
+# *User Profile 2*
 ## **Functional Specifications** 
 ### **Hardware Requirements** 
 ### **Operating System Environment**
