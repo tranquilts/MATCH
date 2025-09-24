@@ -4,7 +4,7 @@
 ## **System Requirements**
 ## **User Profiles**
 ### **User Profile 1**
-## Michelle Whiteworth
+## Michelle Whitworth
 An old lady who loves to play crosswords with her friends and enjoys a challenge as she believes in keeping her brain sharp and active.
  
 
