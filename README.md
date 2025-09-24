@@ -14,8 +14,7 @@ An old lady who loves to play matches with her friends and enjoys a challenge as
 
 ## **User Profile 2**
 #### Muqtadir Siraj 
-A 18 year old boy. Who likes to make good use of his time in between uni classes and assignements he finds this game to be not only relaxing but also satisying. He'd like this game to be more inclusive for larger groups so he can play with his friends in a competitive way. 
-
+A 18 year-old boy, who likes to relax playing in-between university classes and study sessions for his personal satisfaction. As an user, he expressed desire for the game to accommodate larger groups so he can compete against his friends. 
 
 ## **Functional Specifications** 
 
