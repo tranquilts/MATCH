@@ -5,7 +5,7 @@
 ## **User Profiles**
 ## **User Profile 1**
 #### Michelle Whitworth
-An old lady who loves to play crosswords with her friends and enjoys a challenge as she believes in keeping her brain sharp and active.
+An old lady who loves to play matches with her friends and enjoys a challenge as she believes in keeping her brain sharp and active.
  
 
 ## **User Profile 2**
