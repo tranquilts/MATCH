@@ -11,5 +11,9 @@
 ### AI
 ### Scores
 ### Timers
-## Non function 
-### 
+## Non functional specifications
+### Aesthetic 
+### Usability
+### Ease of use 
+### Feedback style
+### Basic needs
