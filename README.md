@@ -14,7 +14,7 @@ An old lady who loves to play matches with her friends and enjoys a challenge as
 
 ## **User Profile 2**
 #### Phillip Maroony
-A 16 year old boy 
+A 18 year old boy. Who likes to make good use of his time in between uni classes and assignements he finds this game to be not only relaxing but also satisying. He'd like this game to be more inclusive for larger groups so he can play with his friends in a competitive way. 
 
 
 ## **Functional Specifications** 
