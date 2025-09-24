@@ -4,7 +4,15 @@
 ## **System Requirements**
 ## **User Profiles**
 ### **User Profile 1**
+## Michelle Whiteworth
+An old lady who loves to play crosswords with her friends and enjoys a challenge as she believes in keeping her brain sharp and active.
+ 
+
 ### **User Profile 2**
+## Phillip Maroony
+A 16 year old boy 
+
+
 ## **Functional Specifications** 
 ### **Hardware Requirements** 
 ### **Operating System Environment**
