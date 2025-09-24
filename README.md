@@ -13,7 +13,7 @@
 ### **AI**
 ### **Scores**
 ### **Timers**
-## **Non functional Specifications**
+## **Non-functional specifications**
 ### **Aesthetic** 
 ### **Usability**
 ### **Ease of use** 
