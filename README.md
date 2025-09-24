@@ -1,4 +1,4 @@
-# CROSSWORD 
+# MATCH
 ## **Primary Target Audience**
 
 ## **User Requirements** 
@@ -18,7 +18,9 @@ A 16 year old boy
 
 
 ## **Functional Specifications** 
+
 ### **Hardware Requirements** 
+
 ### **Operating System Environment**
 ### **Application Functions** 
 ### **Collisions**
@@ -27,7 +29,15 @@ A 16 year old boy
 ### **Timers**
 ## **Non-functional specifications**
 ### **Aesthetic** 
+
+
 ### **Usability**
+
+
 ### **Ease of use** 
+
+
 ### **Feedback style**
+
+
 ### **Basic needs**
