@@ -5,7 +5,7 @@ alongside being educational and a way to keep the brain active. Our website aims
 intuitive UI design as well as being accessible to players of all abilities.
 
 ## **User Requirements** 
-# Functional Requirements
+### Functional Requirements
 1. The game can be played as a single-player game.
 2. The interface must allow users to start a game without extra hassle.
 3. Users must be able to play directly on their server (no downloads required).
@@ -14,7 +14,7 @@ intuitive UI design as well as being accessible to players of all abilities.
 6. When a player asks for a clue, the game displays hints.
 7. The system responds when a match is made. 
 
-# Non-Functional Requirements
+### Non-Functional Requirements
 1. The website is clean and intuitive with minimal clutter and no intrusive pop-ups.
 2. The design must be accessible to users with varying abilities (e.g. high contrast, screen reader compatibility).
 3. The game should load within 3 seconds with a standard internet connection.
@@ -24,11 +24,11 @@ intuitive UI design as well as being accessible to players of all abilities.
    
 
 ## **System Requirements**
-# Functional System Requirements
+### Functional System Requirements
 1. The system must support accessibility standards (WCAG 2.1 compliance).
 2. The system implements a game engine that handles matching logic and providing hints. 
    
-# Non-Functional Requirements
+### Non-Functional Requirements
 1. The page should load within 3 seconds under average conditions.
 2. The website must be compatible with all modern browsers (Chrome, Edge, Firefox, Safari).
 3. The website should be reliable with a target uptime of 99.5% or higher.
