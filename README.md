@@ -76,3 +76,14 @@ and eye-catching website features as well as being an expert user and knows how 
 
 
 ### **Basic needs**
+
+## Mock Ups 
+
+### Storyboards
+
+
+## Risk Management
+
+## Software Development Strategy
+
+## Test Plan 
