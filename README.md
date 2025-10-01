@@ -24,8 +24,19 @@ intuitive UI design as well as being accessible to players of all abilities.
    
 
 ## **System Requirements**
-
-
+# Functional System Requirements
+1. The system must support accessibility standards (WCAG 2.1 compliance).
+2. The system implements a game engine that handles matching logic and providing hints. 
+   
+# Non-Functional Requirements
+1. The page should load within 3 seconds under average conditions.
+2. The website must be compatible with all modern browsers (Chrome, Edge, Firefox, Safari).
+3. The website should be reliable with a target uptime of 99.5% or higher.
+4. The system should be modular to allow easy updates and bug fixes.
+5. Code must follow best practices and be documented.
+6. The interface must be designed with both novice and expert users in mind.
+7. The interface must support both detailed content and skim-friendly navigation.
+   
 ## **User Profiles**
 
 ## **User Profile 1**
