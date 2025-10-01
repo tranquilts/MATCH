@@ -60,10 +60,8 @@ and eye-catching website features as well as being an expert user and knows how 
 
 ### **Operating System Environment**
 ### **Application Functions** 
-### **Collisions**
-### **AI**
-### **Scores**
-### **Timers**
+### **Hints Function**
+
 ## **Non-functional specifications**
 ### **Aesthetic** 
 
