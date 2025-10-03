@@ -51,10 +51,7 @@ professional experience with no pop-ups. ​
  
 ### **User Profile 2**
 #### Muqtadir Siraj
-An 18 year-old male who is a business student and likes to relax, playing in-between university classes and study sessions for his
-personal satisfaction. He would like the game to let users compete with each other. He is a typical browser user, that skims through
-content quickly in order to get a sense of the big picture. He prefers a website that gets to the point and locks in on interesting 
-and eye-catching website features as well as being an expert user and knows how to navigate his way around.
+An 18 year-old male who is a business student and likes to relax, playing in-between university classes and study sessions for his personal satisfaction. He would like the game to let users compete with each other. He is a typical browser user, that skims through content quickly in order to get a sense of the big picture. He prefers a website that gets to the point and locks in on interesting and eye-catching website features as well as being an expert user and knows how to navigate his way around.
 
 
 ## **Functional Specifications** 
@@ -62,10 +59,7 @@ and eye-catching website features as well as being an expert user and knows how 
 ### **Hardware Requirements** 
 
 ### **Operating System Environment**
-The game will be developed as a web-based application, eliminating the need for downloads and installations. Therefore, the game is 
-platform-independent and can run on any device with a modern web browser. JavaScript must be enabled and HTML5 and CSS3 support 
-is required. The game should function consistently across responsive breakpoints (desktop, tablet, mobile), should load within 3 
-seconds on a standard broadband connection and have minimal CPU/GPU usage to ensure smooth performance.
+The game will be developed as a web-based application, eliminating the need for downloads and installations. Therefore, the game is platform-independent and can run on any device with a modern web browser. JavaScript must be enabled and HTML5 and CSS3 support is required. The game should function consistently across responsive breakpoints (desktop, tablet, mobile), should load within 3 seconds on a standard broadband connection and have minimal CPU/GPU usage to ensure smooth performance.
 
 ### **Application Functions** 
 
@@ -76,15 +70,27 @@ seconds on a standard broadband connection and have minimal CPU/GPU usage to ens
 
 
 ### **Usability**
-
+- Consistency: The interface must maintain a consistent layout and style across all pages and screens. Buttons and actions should behave predictably across devices.
+- Responsiveness: The game must adapt to different screen sizes and layout should remain functional and readable.
+- Accessibility: The system should comply with WCAG 2.1 AA accessibility standards.
+- Error prevention: The interface should guide users to avoid errors such as highlighting invalid selections.
 
 ### **Ease of use** 
-
+- Ease of learning: Users must be able to understand how to play within 1–2 minutes of first use and clear instructions should be available before using the game.
+- Simple navigation: The interface should have a minimal number of steps to load and start a game (e.g., one click/tap from the homepage or button).
+- Essential functions (start, hints, exit) must be clearly visible and accessible at all times.
+- Low cognitive load: Instructions should be concise and written in simple language.
+- Minimal setup: No downloads required and the game should be playable immediately after loading the page.
 
 ### **Feedback style**
 
 
 ### **Basic needs**
+- Core gameplay needs: Clear instructions before gameplay starts and immediate feedback should be given for user actions (correct/incorrect match)
+- Security and privacy: The game shouldn't require any personal data to play
+- Accessibility: All essential interactions (starting a game, selecting words, requesting hints) must be achievable without advanced technical skills.
+- Reliability: Core features (matching, hints, scoring) must always function correctly as well as being consistently available with minimal downtime.
+
 
 ## Mock Ups 
 
