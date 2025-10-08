@@ -130,13 +130,14 @@ Functionality:
 - Essential functions (start, hints, exit) should be visible and accessible at all times.
 - Low cognitive load: Instructions should be concise and written in simple language.
 - Minimal setup: Requires no downloads and the game loads automatically from the homepage.
-
+ 
+### **Feedback Style**
 Purpose: Provide players with clear, automatic responses to their actions during gameplay.
 Functionality: 
-- Present visual cues such as highlighting matched or incorrect pairs.
-- Plays audio feedback for correct matches, incorrect selections or key game events.
-- Updates scores and progress in real-time to keep players informed,
-- Provide end-of-game performance feedback, including unmatched pairs for learning purposes.
+- Visuals: User should be presented with visual cues such as highlighting matched or incorrect pairs.
+- Audio - Users receive audio feedback for correct matches, incorrect selections or key game events.
+- Tracking: The game tracks scores and progress in real-time to keep players informed.
+- End of game: The game should provide end-of-game performance feedback, including unmatched pairs for learning purposes to users. 
 
 ### **Basic needs**
 - Core gameplay needs: Clear instructions before gameplay starts and immediate feedback should be given for user actions (correct/incorrect match)
