@@ -70,8 +70,8 @@ The core application functions of MATCH are designed to provide an engaging, edu
 - One click/tap from the homepage to start a new game.
 - Clear navigation to read rules and instructions before gameplay begins.
 - Minimal steps to ensure a smooth and intuitive user experience.
-
-   2. Matching Logic
+  
+2. Matching Logic
 Purpose: Allow players to pair matching words together.
   Functionality:
 - Checks player selections and determines if a match is correct.
@@ -86,7 +86,7 @@ Purpose: Allow players to pair matching words together.
 - Highlights unmatched pairs for learning purposes.
 - Offers options to restart or return to the main page.
 
-   4. Responsive & Accessibility
+4. Responsive & Accessibility
    Purpose: Ensure the game is playable on a variety of devices and accessible to all users.
    Functionality:
 - Adapts layout for desktop,tablet and mobile devices.
