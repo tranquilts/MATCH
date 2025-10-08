@@ -65,29 +65,32 @@ The game will be developed as a web-based application, eliminating the need for 
 The core application functions of MATCH are designed to provide an engaging, educational and accessible experience for students aged 10 and over. The system prioritises ease of use, responsive and consistent feedback, catering to both novice and expert users.
 
 1. Game Start/Navigation
-
-   Purpose: Allow users to start a game promptly without extra steps.
-   Functionality:
+   
+Purpose: Allow users to start a game promptly without extra steps.
+Functionality:
 - One click/tap from the homepage to start a new game.
 - Clear navigation to read rules and instructions before gameplay begins.
 - Minimal steps to ensure a smooth and intuitive user experience.
   
 2. Matching Logic
-   Purpose: Allow players to pair matching words together.
- Functionality:
+   
+Purpose: Allow players to pair matching words together.
+Functionality:
 - Checks player selections and determines if a match is correct.
 - Updates the game automatically after each selection.
 - Saves scores and tracks progress throughout the game
 - Provides visual/audio feedback when matches are made.
 
 3. Game End/Feedback
-   Purpose: End the game and provide players with performance feedback.
+   
+Purpose: End the game and provide players with performance feedback.
 Functionality:
 - Displays the final score and accuracy.
 - Highlights unmatched pairs for learning purposes.
 - Offers options to restart or return to the main page.
 
 4. Responsive & Accessibility
+
 Purpose: Ensure the game is playable on a variety of devices and accessible to all users.
 Functionality:
 - Adapts layout for desktop,tablet and mobile devices.
