@@ -64,46 +64,52 @@ The game will be developed as a web-based application, eliminating the need for 
 ### **Application Functions** 
 The core application functions of MATCH are designed to provide an engaging, educational and accessible experience for students aged 10 and over. The system prioritises ease of use, responsive and consistent feedback, catering to both novice and expert users.
 
-1. Game Start/Navigation
-   
+Game Start/Navigation
+
 Purpose: Allow users to start a game promptly without extra steps.
+
 Functionality:
 - One click/tap from the homepage to start a new game.
 - Clear navigation to read rules and instructions before gameplay begins.
 - Minimal steps to ensure a smooth and intuitive user experience.
   
-2. Matching Logic
-   
+Matching Logic
+
 Purpose: Allow players to pair matching words together.
+
 Functionality:
 - Checks player selections and determines if a match is correct.
 - Updates the game automatically after each selection.
 - Saves scores and tracks progress throughout the game
 - Provides visual/audio feedback when matches are made.
 
-3. Game End/Feedback
-   
+Game End/Feedback
+
 Purpose: End the game and provide players with performance feedback.
+
 Functionality:
 - Displays the final score and accuracy.
 - Highlights unmatched pairs for learning purposes.
 - Offers options to restart or return to the main page.
 
-4. Responsive & Accessibility
+Responsive & Accessibility
 
-Purpose: Ensure the game is playable on a variety of devices and accessible to all users.
+Purpose: Ensure the game is playable across all devices and accessible to all users.
+
 Functionality:
 - Adapts layout for desktop,tablet and mobile devices.
 - Complies with WCAG 2.1 accessibility standards
 - Minimises cognitive load with clear instructions and an intuitive interface
 
-5. Feedback Style
+Feedback Style
+
 Purpose: Provide users with automatic and clear responses to their moves during the game.
+
 Functionality:
 - Display visual cues (e.g highlighting matched pairs) when a selection is correct or incorrect.
 - Provides audio feedback for correct matches, incorrect selections or game events.
 - Shows progress and scores in real-time to keep players informed.
-- Offers performance feedback at the end of the game, including unmatched pairs for learning purposes. 
+- Offers performance feedback at the end of the game, including unmatched pairs for learning purposes.
   
 ### **Hints Function**
 
@@ -118,11 +124,11 @@ Functionality:
 - Error prevention: The interface should guide users to avoid errors such as highlighting invalid selections.
 
 ### **Ease of use** 
-- Ease of learning: Users must be able to understand how to play within 1–2 minutes of first use and clear instructions should be available before using the game.
-- Simple navigation: The interface should have a minimal number of steps to load and start a game (e.g., one click/tap from the homepage or button).
-- Essential functions (start, hints, exit) must be clearly visible and accessible at all times.
+- Ease of learning: Users should be able to understand the game rules and gameplay within 1–2 minutes of first use. Instructions are automatically displayed before starting to support new users.
+- Simple navigation: The interface should include as few steps as possible to load and start a game (e.g., one click/tap from the homepage or button).
+- Essential functions (start, hints, exit) should be visible and accessible at all times.
 - Low cognitive load: Instructions should be concise and written in simple language.
-- Minimal setup: No downloads required and the game should be playable immediately after loading the page.
+- Minimal setup: Requires no downloads and the game loads automatically from the homepage.
 
 Purpose: Provide players with clear, automatic responses to their actions during gameplay.
 Functionality: 
