@@ -133,7 +133,7 @@ Functionality:
  
 ### **Feedback Style**
 - Visuals: User should be presented with visual cues such as highlighting matched or incorrect pairs.
-- Audio - Users receive audio feedback for correct matches, incorrect selections or key game events.
+- Audio: Users receive audio feedback for correct matches, incorrect selections or key game events.
 - Tracking: The game tracks scores and progress in real-time to keep players informed.
 - End of game: The game should provide end-of-game performance feedback, including unmatched pairs for learning purposes to users. 
 
