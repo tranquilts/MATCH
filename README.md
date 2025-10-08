@@ -136,46 +136,54 @@ Functionality:
 Risk management involves identifying potential issues that could affect the success of the Match Game project and planning strategies that reduce or eliminate their impact. By assessing technical, design and collaboration risks early, the team can deliver on smooth development and timely completion.
 
 Risk
+
 Limited experience with JavaScript, CSS or Flask could increase coding errors or delay development.
 Likelihood - medium
 Impact - high
 Mitigation strategy - Provide extra time for tutorials, share learning resources and delegate tasks based on skill strengths.
 
 Risk
+
 Difficulty integrating different team members code into Github may lead to version conflicts or loss of progress.
 Impact - medium
 Likelihood - medium
 Mitigation strategy - Use git branches, commit regularly and communicate early before merges
 
 Risk
+
 Poor communication between group members could contribute to inconsistent design or missed tasks.
 Impact - medium
 Likelihood - high
 Mitigation strategy - Hold short group check-ins, use a shared document for updates and assign responsibilities. clearly.
 
 Risk
+
 Game logic (matching functionality) may not work as intended or process scores incorrectly.
 Likelihood - High
 Impact - High
 Mitigation strategy - Test the matching system regularly, use pseudocode and charts to verify logic before implementation.
 
 Risk
+
 The interface might not be user-friendly or accessible to all users.
 Likelihood - Medium
 Iimpact - Medium
 Mitigation strategy - Adhere to accessibility guidelines (wcag 2.1), conduct usability testing and simplify layout anc controls
 
 Risk
+
 Bugs or performance issues found late in development can delay completion
 Likelihood - Medium
 Impact - High
 Mitigation strategy - Test regularly at each development stage and log all identified issues for troubleshooting.
 
 Risk
+
 Project scope may become too complex, making it difficult to complete within the time limit
 Likelihood - Medium
 Impact - High
 Mitigation strategy - Focus on core features first and add optional features after the main functionality is stable. 
+
 ## Software Development Strategy
 
 ## Test Plan 
