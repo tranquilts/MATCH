@@ -95,10 +95,16 @@ Purpose: Ensure the game is playable on a variety of devices and accessible to a
 Functionality:
 - Adapts layout for desktop,tablet and mobile devices.
 - Complies with WCAG 2.1 accessibility standards
-- Minimises cognitive load with clear instructions and an intuitive interface 
-      
+- Minimises cognitive load with clear instructions and an intuitive interface
 
-
+5. Feedback Style
+Purpose: Provide users with automatic and clear responses to their moves during the game.
+Functionality:
+- Display visual cues (e.g highlighting matched pairs) when a selection is correct or incorrect.
+- Provides audio feedback for correct matches, incorrect selections or game events.
+- Shows progress and scores in real-time to keep players informed.
+- Offers performance feedback at the end of the game, including unmatched pairs for learning purposes. 
+  
 ### **Hints Function**
 
 ## **Non-functional specifications**
@@ -118,8 +124,12 @@ Functionality:
 - Low cognitive load: Instructions should be concise and written in simple language.
 - Minimal setup: No downloads required and the game should be playable immediately after loading the page.
 
-### **Feedback style**
-
+Purpose: Provide players with clear, automatic responses to their actions during gameplay.
+Functionality: 
+- Present visual cues such as highlighting matched or incorrect pairs.
+- Plays audio feedback for correct matches, incorrect selections or key game events.
+- Updates scores and progress in real-time to keep players informed,
+- Provide end-of-game performance feedback, including unmatched pairs for learning purposes.
 
 ### **Basic needs**
 - Core gameplay needs: Clear instructions before gameplay starts and immediate feedback should be given for user actions (correct/incorrect match)
