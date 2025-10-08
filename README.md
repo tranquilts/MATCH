@@ -132,8 +132,6 @@ Functionality:
 - Minimal setup: Requires no downloads and the game loads automatically from the homepage.
  
 ### **Feedback Style**
-Purpose: Provide players with clear, automatic responses to their actions during gameplay.
-Functionality: 
 - Visuals: User should be presented with visual cues such as highlighting matched or incorrect pairs.
 - Audio - Users receive audio feedback for correct matches, incorrect selections or key game events.
 - Tracking: The game tracks scores and progress in real-time to keep players informed.
