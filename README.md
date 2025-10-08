@@ -93,24 +93,6 @@ Functionality:
 - Highlights unmatched pairs for learning purposes.
 - Offers options to restart or return to the main page.
 
-Responsive & Accessibility
-
-Purpose: Ensure the game is playable across all devices and accessible to all users.
-
-Functionality:
-- Adapts layout for desktop,tablet and mobile devices.
-- Complies with WCAG 2.1 accessibility standards
-- Minimises cognitive load with clear instructions and an intuitive interface
-
-Feedback Style
-
-Purpose: Provide users with automatic and clear responses to their moves during the game.
-
-Functionality:
-- Display visual cues (e.g highlighting matched pairs) when a selection is correct or incorrect.
-- Provides audio feedback for correct matches, incorrect selections or game events.
-- Shows progress and scores in real-time to keep players informed.
-- Offers performance feedback at the end of the game, including unmatched pairs for learning purposes.
   
 ### **Hints Function**
 
