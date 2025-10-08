@@ -167,7 +167,7 @@ Risk
 
 The interface might not be user-friendly or accessible to all users.
 Likelihood - Medium
-Iimpact - Medium
+Impact - Medium
 Mitigation strategy - Adhere to accessibility guidelines (wcag 2.1), conduct usability testing and simplify layout anc controls
 
 Risk
