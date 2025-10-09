@@ -13,7 +13,9 @@ intuitive UI design as well as being accessible to players of all abilities.
 4. Users should have instructions/rules before starting.
 5. The game should be responsive and usable on desktop, tablet and mobile devices.
 6. When a player asks for a clue, the game displays hints.
-7. The system responds when a match is made. 
+7. The system responds when a match is made.
+8. End messsage displayed when user finishes the game successfully.
+9. Play again message when user finishes.
 
 ### Non-Functional Requirements
 1. The website is clean and intuitive with minimal clutter and no intrusive pop-ups.
@@ -191,5 +193,6 @@ Mitigation strategy - Focus on core features first and add optional features aft
 | Test No. | Test Description | Action | Expected Outcome | Actual Outcome | Further Actions |
 |----------|------------------|--------------|------------------|----------------|---------|
 |1.1|Launch the game website|Open game URL in browser|Homepage loads successfully with visible 'Start Game' screen| | |
-|1.2|Start a new game|Click on 'Start Game'|Game board appears with all word tiles displayed| | |
-|1.3|Select two matching words|Click on two matching word tiles|Both tiles remain revealed and
+|1.2|Start a new game|Click on 'Start Game' button|Game board appears with all word tiles displayed| | |
+|1.3|Select two matching words|Click on two matching word tiles|Both tiles remain revealed and colour change is made| | |
+|1.4|Select two non-matching
