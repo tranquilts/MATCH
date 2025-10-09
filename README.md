@@ -187,3 +187,5 @@ Mitigation strategy - Focus on core features first and add optional features aft
 ## Software Development Strategy
 
 ## Test Plan 
+
+| Test No. | Test Description | Data Entered | Expected Outcome | Actual Outcome | Actions |
