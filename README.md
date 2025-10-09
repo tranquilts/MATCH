@@ -191,5 +191,5 @@ Mitigation strategy - Focus on core features first and add optional features aft
 | Test No. | Test Description | Action | Expected Outcome | Actual Outcome | Further Actions |
 |----------|------------------|--------------|------------------|----------------|---------|
 |1.1|Launch the game website|Open game URL in browser|Homepage loads successfully with visible 'Start Game' screen| | |
-|1.2!Start a new game|Click on 'Start Game'|Game board appears with all word tiles displayed| | |
-|1.3|Select two matching words| Click on two matching word tiles|Both tiles remain revealed and
+|1.2|Start a new game|Click on 'Start Game'|Game board appears with all word tiles displayed| | |
+|1.3|Select two matching words|Click on two matching word tiles|Both tiles remain revealed and
