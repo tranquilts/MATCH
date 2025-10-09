@@ -198,4 +198,4 @@ Markdown| Column 1       | Column 2       | Column 3       |
 
 
 | Test No. | Test Description | Data Entered | Expected Outcome | Actual Outcome | Actions |
-| -------- | ---------------- | ------------ | ---------------- | -------------- | ------= |
+|----------|------------------|--------------|------------------|----------------|---------|
