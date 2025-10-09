@@ -188,5 +188,14 @@ Mitigation strategy - Focus on core features first and add optional features aft
 
 ## Test Plan 
 
+
+Markdown| Column 1       | Column 2       | Column 3       |
+|-----------------|----------------|----------------|
+| Row 1, Cell 1  | Row 1, Cell 2  | Row 1, Cell 3  |
+| Row 2, Cell 1  | Row 2, Cell 2  | Row 2, Cell 3  |
+| Row 3, Cell 1  | Row 3, Cell 2  | Row 3, Cell 3  |
+
+
+
 | Test No. | Test Description | Data Entered | Expected Outcome | Actual Outcome | Actions |
 | -------- | ---------------- | ------------ | ---------------- | -------------- | ------= |
