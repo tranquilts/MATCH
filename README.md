@@ -102,12 +102,27 @@ Functionality:
 - Highlights unmatched pairs for learning purposes.
 - Offers options to restart or return to the main page.
 
+### **Moves per round**
+The game will keep track of user scores. It is measured by how many times 
+
+### **Misses**
+
+## **Pause Menu**
   
-### **Hints Function**
+### **Replay function**
+The replay function will be of use when the game has ended. This way the user will have a choice of wheather or not they wish to continue the game and restart.
+As the game ends there will be a reload button on the screen which the user can press which leads to the score and moves being reset. 
+Then the player starts again straight after the game is reinitialised. 
+The replay button will generate a new random layout so that users will stay engaged for longer periods of time. 
 
 ## **Non-functional specifications**
 ### **Aesthetic** 
-
+The games aesthetic will consist of a minimal and calm aesthetic with sharp card designs. With soft flip noises as the cards turn over. The atmosphere is inspired by similar games with the aim to make users feel calm and relaxed. 
+Things to note include:
+- Colour palette and font choices
+- Audio buttons
+- Art inspo
+This will help maintain consistency through development
 
 ### **Usability**
 - Consistency: The interface must maintain a consistent layout and style across all pages and screens. Buttons and actions should behave predictably across devices.
