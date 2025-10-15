@@ -166,7 +166,7 @@ Risk management involves identifying potential issues that could affect the succ
 |Poor communication between team members contributes to inconsistent designs or missed tasks|Medium | High|Hold regular check-ins, use a shared document for updates and asking responsibilities clearly.|
 |Game logic (matching functionality) may malfunction or process scores incorrectly.| High | High | Test matching system regularly, use pseudocode or flowcharts to verify logic before implementation.|
 The interface may not be user-friendly or accessible for all users. | Medium | Medium | Follow WCAG 2.1 accessibility standards, conduct usability testing and simplify layout controls.|
-|Bugs or performance issues late in development delays completion | Medium | High | Test iterative st each development stage and record identified issues for troubleshooting.|
+|Bugs or performance issues late in development delays completion | Medium | High | Test iteratively at each development stage and record identified issues for troubleshooting.|
 |Project scope is too complex, rendering difficult to complete within the given timeframe| Medium | High | Prioritise core Features first and add extra features after core functionality proves stable. |
 
 ## Software Development Strategy
