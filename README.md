@@ -159,54 +159,15 @@ This will help maintain consistency through development
 ## Risk Management
 Risk management involves identifying potential issues that could affect the success of the Match Game project and planning strategies that reduce or eliminate their impact. By assessing technical, design and collaboration risks early, the team can deliver on smooth development and timely completion.
 
-Risk
-
-Limited experience with JavaScript, CSS or Flask could increase coding errors or delay development.
-Likelihood - medium
-Impact - high
-Mitigation strategy - Provide extra time for tutorials, share learning resources and delegate tasks based on skill strengths.
-
-Risk
-
-Difficulty integrating different team members code into Github may lead to version conflicts or loss of progress.
-Impact - medium
-Likelihood - medium
-Mitigation strategy - Use git branches, commit regularly and communicate early before merges
-
-Risk
-
-Poor communication between group members could contribute to inconsistent design or missed tasks.
-Impact - medium
-Likelihood - high
-Mitigation strategy - Hold short group check-ins, use a shared document for updates and assign responsibilities. clearly.
-
-Risk
-
-Game logic (matching functionality) may not work as intended or process scores incorrectly.
-Likelihood - High
-Impact - High
-Mitigation strategy - Test the matching system regularly, use pseudocode and charts to verify logic before implementation.
-
-Risk
-
-The interface might not be user-friendly or accessible to all users.
-Likelihood - Medium
-Impact - Medium
-Mitigation strategy - Adhere to accessibility guidelines (wcag 2.1), conduct usability testing and simplify layout anc controls
-
-Risk
-
-Bugs or performance issues found late in development can delay completion
-Likelihood - Medium
-Impact - High
-Mitigation strategy - Test regularly at each development stage and log all identified issues for troubleshooting.
-
-Risk
-
-Project scope may become too complex, making it difficult to complete within the time limit
-Likelihood - Medium
-Impact - High
-Mitigation strategy - Focus on core features first and add optional features after the main functionality is stable. 
+| Risk | Likelihood | Impact | Mitigation Strategy |
+-------|------------|--------|----------------------------|
+| Limited experience with JavaScript, CSS or Flask increases coding errors or delay development. |Medium| High | Allow extra time for tutorials, share resources and delegate based on skill levels.| |
+|Difficulty integrating different team members code in Github cause version controls or lost progress. | Medium | Medium | Use Git branches, commit regularly and communicate before merges.|
+|Poor communication between team members contributes to inconsistent designs or missed tasks|Medium | High|Hold regular check-ins, use a shared document for updates and asking responsibilities clearly.|
+|Game logic (matching functionality) may malfunction or process scores incorrectly.| High | High | Test matching system regularly, use pseudocode or flowcharts to verify logic before implementation.|
+The interface may not be user-friendly or accessible for all users. | Medium | Medium | Follow WCAG 2.1 accessibility standards, conduct usability testing and simplify layout controls.|
+|Bugs or performance issues late in development delays completion | Medium | High | Test iterative st each development stage and record identified issues for troubleshooting.|
+|Project scope is too complex, rendering difficult to complete within the given timeframe| Medium | High | Prioritise core Features first and add extra features after core functionality proves stable. |
 
 ## Software Development Strategy
 
