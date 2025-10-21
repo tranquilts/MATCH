@@ -1,0 +1,46 @@
+/* style.css */
+
+/* Apply full-page border */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFF7DD;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* Border around the whole page */
+    border: 15px solid #91C1C4;
+    box-sizing: border-box; /* ensures border doesn't cause scrollbars */
+}
+
+/* Heading style */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Paragraph style */
+p {
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+/* Link style */
+a {
+    color: #FF8C42;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
