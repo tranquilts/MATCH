@@ -1,7 +1,7 @@
 # MATCH
 ## **Primary Target Audience**
 Our primary target audience are students aged 10 and above in order to provide a fun gaming experience,
-alongside being educational and a way to keep the brain active. Our website aims to be simple to use with a clean
+providing educational value and a way to keep the brain active. Our website aims to be simple to use with a clean
 intuitive UI design as well as being accessible to players of all abilities.
 
 
