@@ -103,14 +103,16 @@ Functionality:
 - Offers options to restart or return to the main page.
 
 ### **Moves per round**
-The game will keep track of user scores. It is measured by how many times 
+For each round, the game tracks the number of moves the player makes to match images together as pairs. 
 
 ### **Misses**
+The game tracks how many time players do not match images correctly while they play. 
 
-## **Pause Menu**
+## **Pause**
+  Users can stop the game at any time and come back to finish the game without losing their progress. 
   
 ### **Replay function**
-The replay function will be of use when the game has ended. This way the user will have a choice of wheather or not they wish to continue the game and restart.
+The replay function will be of use when the game has ended. This way the user will have a choice of whether or not they wish to continue the game and restart.
 As the game ends there will be a reload button on the screen which the user can press which leads to the score and moves being reset. 
 Then the player starts again straight after the game is reinitialised. 
 The replay button will generate a new random layout so that users will stay engaged for longer periods of time. 
