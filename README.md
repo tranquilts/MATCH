@@ -103,7 +103,7 @@ Functionality:
 - Offers options to restart or return to the main page.
 
 ### **Moves per round**
-For each round, the game tracks the number of moves the player makes to match images together as pairs. 
+For each round, the game tracks the number of moves the player makes to match images.
 
 ### **Misses**
 The game tracks how many time players do not match images correctly while they play. 
