@@ -12,7 +12,7 @@ intuitive UI design as well as being accessible to players of all abilities.
 3. Users must be able to play directly on their server (no downloads required).
 4. Users should have instructions/rules before starting.
 5. The game should be responsive and usable on desktop, tablet and mobile devices.
-6. When a player asks for a clue, the game displays hints.
+6. Users can stop the game and come back at any time.
 7. The system responds when a match is made.
 8. End messsage displayed when user finishes the game successfully.
 9. Play again message when user finishes.
