@@ -12,10 +12,10 @@ intuitive UI design as well as being accessible to players of all abilities.
 3. Users must be able to play directly on their server (no downloads required).
 4. Users should have instructions/rules before starting.
 5. The game should be responsive and usable on desktop, tablet and mobile devices.
-6. Users can stop the game and come back at any time.
+6. Users can stop the game and return any time.
 7. The system responds when a match is made.
-8. End messsage displayed when user finishes the game successfully.
-9. Play again message when user finishes.
+8. An end messsage is displayed when user finishes the game successfully.
+9. Play again message runs when user finishes.
 
 ### Non-Functional Requirements
 1. The website is clean and intuitive with minimal clutter and no intrusive pop-ups.
