@@ -109,7 +109,7 @@ For each round, the game tracks the number of moves the player makes to match im
 The game tracks how many times the player does not match images correctly while they play. 
 
 ## **Pause**
-  Users can stop the game at any time and come back to finish the game without losing their progress. 
+The game saves progress by the player and prevents loss of progress if the player stops playing temporarily.  
   
 ### **Replay function**
 The replay function will be of use when the game has ended. This way the user will have a choice of whether or not they wish to continue the game and restart.
