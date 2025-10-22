@@ -106,7 +106,7 @@ Functionality:
 For each round, the game tracks the number of moves the player makes to match images.
 
 ### **Misses**
-The game tracks how many time players do not match images correctly while they play. 
+The game tracks how many times the player does not match images correctly while they play. 
 
 ## **Pause**
   Users can stop the game at any time and come back to finish the game without losing their progress. 
