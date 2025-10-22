@@ -153,6 +153,21 @@ This will help maintain consistency through development
 
 
 ## Mock Ups 
+The project includes a set of UI mockups that illustrate the core screens and user flow of the MATCHA image matching game. These mockups were constructed to guide the visual layout and core functionality before development began. 
+
+### Starting Page
+
+Purpose: This introduces the game and welcomes the player to begin.
+Elements:
+- A stylised game title and branding,
+- Clear, numbered instructions explaininghow to play
+- A prominent 'Play Now' button to launch the game
+- A settings icon that provides access to key controls such as pause, restart and quit.
+
+<img width="1448" height="908" alt="Instructions Page (3)" src="https://github.com/user-attachments/assets/663bc4eb-a49b-4244-8d39-d29420df0edf" />
+
+
+
 
 
 ### Storyboards
