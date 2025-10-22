@@ -29,7 +29,7 @@ intuitive UI design as well as being accessible to players of all abilities.
 ## **System Requirements**
 ### Functional System Requirements
 1. The system must support accessibility standards (WCAG 2.1 compliance).
-2. The system implements a game engine that handles matching logic and providing hints. 
+2. The system implements a game engine that handles matching logic and move tracking. 
    
 ### Non-Functional Requirements
 1. The page should load within 3 seconds under average conditions.
@@ -59,17 +59,17 @@ An 18 year-old male who is a business student and likes to relax, playing in-bet
 ## **Functional Specifications** 
 
 ### **Hardware Requirements** 
-The development of this game prioritises smooth workflow and the ability to handle basic game logic. To be able to achieve this a simple machine is needed. For example to handle basic game logic a CPU is needed. 
-- An integrated CPU as 2d rendering is light
-  -Saves power and cost while providing plenty of performance for 2D rendering. 
+The development of this game prioritises smooth workflow and the ability to handle basic game logic. To be able to achieve this, a simple machine is needed. For example to handle basic game logic, a CPU is needed. 
+- An integrated CPU as 2D rendering is light
+- Saves power and cost while providing plenty of performance for 2D rendering. 
 - Standard 256GB SSD storage
-   -Faster workflow and builds with a reliable capacity for small projects
+- Faster workflow and builds with a reliable capacity for small projects.
 - 8GB - 16GB RAM
-  - 16GB prevents slowdowns when multi tasking
+- 16GB ensures smooth performance when multi-tasking.
 A laptop with these specs would be preferable as this game doesn't require heavy processing power such as AI or 3D rendering. 
 
 ### **Operating System Environment**
-The game will be developed as a web-based application, eliminating the need for downloads and installations. Therefore, the game is platform-independent and can run on any device with a modern web browser. JavaScript must be enabled and HTML5 and CSS3 support is required. The game should function consistently across responsive breakpoints (desktop, tablet, mobile), should load within 3 seconds on a standard broadband connection and have minimal CPU/GPU usage to ensure smooth performance.
+The game will be developed as a web-based application, requiring no downloads or installations. Therefore, the game is platform-independent and can run on any device with a modern web browser. JavaScript must be enabled and HTML5 and CSS3 support is required. The game should function consistently across responsive breakpoints (desktop, tablet, mobile), should load within 3 seconds on a standard broadband connection and have minimal CPU/GPU usage to ensure smooth performance.
 
 ### **Application Functions** 
 The core application functions of MATCH are designed to provide an engaging, educational and accessible experience for students aged 10 and over. The system prioritises ease of use, responsive and consistent feedback, catering to both novice and expert users.
