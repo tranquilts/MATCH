@@ -1,4 +1,4 @@
-/* style.css */
+/* menu.css */
 
 /* Apply full-page border */
 html, body {
@@ -21,26 +21,3 @@ body {
     box-sizing: border-box; /* ensures border doesn't cause scrollbars */
 }
 
-/* Heading style */
-h1 {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/* Paragraph style */
-p {
-    color: #555;
-    max-width: 600px;
-    margin: 0 auto 20px auto;
-}
-
-/* Link style */
-a {
-    color: #FF8C42;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}
