@@ -20,8 +20,9 @@ intuitive UI design as well as being accessible to players of all abilities.
 11. 'Restart' restarts the game when clicked in settings menu.
 12. 'Main Menu' loads up the initial menu screen when clicked in settings menu.
 13. 'Quit Game' lets user exit the game when clicked in settings menu.
-14. An end messsage is displayed when user finishes the game successfully.
-15. Play again message runs when user finishes.
+14. 'Play Again' button refreshes the game and let's user start again when clicked in settings menu.
+15. An end messsage is displayed when user finishes the game successfully.
+16. Play again message runs when user finishes.
 
 ### Non-Functional Requirements
 1. The website is clean and intuitive with minimal clutter and no intrusive pop-ups.
@@ -209,3 +210,5 @@ The interface may not be user-friendly or accessible for all users. | Medium | M
 |1.9|Restart from Settings menu|In Settings, click Restart Game|Game board resets and starts a new round immediately| | |
 |1.10|Main Menu from Settings|In Settings, click Main Menu|Initial home screen or main menu loads| | |
 |1.11|Quit Game option|In Settings, click Quit Game|Game session closes and user exits game (or returns to exit confirmation screen)| | |
+|1.12|Play Again button|In Settings, click Play Again|Game refreshes and a new session begins, allowing user to start over immediately| | |
+|1.13|Complete all matches|Match all pairs successfully|“You Win!” message displays| | |
