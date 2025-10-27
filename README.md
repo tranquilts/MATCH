@@ -14,8 +14,14 @@ intuitive UI design as well as being accessible to players of all abilities.
 5. The game should be responsive and usable on desktop, tablet and mobile devices.
 6. Users can stop the game and return any time.
 7. The system responds when a match is made.
-8. An end messsage is displayed when user finishes the game successfully.
-9. Play again message runs when user finishes.
+8. Number of moves is displayed on the side and shows accurate figure.
+9. Number of pairs goes up with each correct pair.
+10. Settings menu is loaded when user clicks on the settings icon.
+11. 'Restart' restarts the game when clicked in settings menu.
+12. 'Main Menu' loads up the initial menu screen when clicked in settings menu.
+13. 'Quit Game' lets user exit the game when clicked in settings menu.
+14. An end messsage is displayed when user finishes the game successfully.
+15. Play again message runs when user finishes.
 
 ### Non-Functional Requirements
 1. The website is clean and intuitive with minimal clutter and no intrusive pop-ups.
@@ -105,11 +111,11 @@ Functionality:
 ### **Moves per round**
 For each round, the game tracks the number of moves the player makes to match images.
 
-### **Misses**
-The game tracks how many times the player does not match images correctly while they play. 
+### **Match count**
+The game tracks each correct match while they play. 
 
-## **Pause**
-The game saves progress by the player and prevents loss of progress if the player stops playing temporarily.  
+## **Settings Menu**
+The game loads up the settings menu when the settings icon is clicked, which includes 'Restart', 'Main Menu', and 'Quit Game'.
   
 ### **Replay function**
 The replay function will be of use when the game has ended. This way the user will have a choice of whether or not they wish to continue the game and restart.
@@ -195,4 +201,11 @@ The interface may not be user-friendly or accessible for all users. | Medium | M
 |1.1|Launch the game website|Open game URL in browser|Homepage loads successfully with visible 'Start Game' screen| | |
 |1.2|Start a new game|Click on 'Start Game' button|Game board appears with all word tiles displayed| | |
 |1.3|Select two matching words|Click on two matching word tiles|Both tiles remain revealed and colour change is made| | |
-|1.4|Select two non-matching
+|1.4|Select two non-matching words|Click on two different word tiles|Tiles flip back after a short delay| | |
+|1.5|Number of moves tracking|Click multiple pairs (both correct and incorrect)|Move counter increases by one after every two card selections and displays accurate count| | |
+|1.6|Number of pairs tracking|Make correct matches one by one|Pair counter increases by one for each successful match and displays total correctly| | |
+|1.7|Double-click same card|Click the same card twice|System ignores second click; no error or crash occurs| | |
+|1.8|Settings menu opens|Click on the Settings icon/button|Settings menu loads successfully, displaying available options| | |
+|1.9|Restart from Settings menu|In Settings, click Restart Game|Game board resets and starts a new round immediately| | |
+|1.10|Main Menu from Settings|In Settings, click Main Menu|Initial home screen or main menu loads| | |
+|1.11|Quit Game option|In Settings, click Quit Game|Game session closes and user exits game (or returns to exit confirmation screen)| | |
