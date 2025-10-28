@@ -12,15 +12,15 @@ intuitive UI design as well as being accessible to players of all abilities.
 3. Users must be able to play directly on their server (no downloads required).
 4. Users should have instructions/rules before starting.
 5. The game should be responsive and usable on desktop, tablet and mobile devices.
-6. Users can stop the game and return any time.
+6. Users can stop and return any time.
 7. The system responds when a match is made.
-8. Number of moves is displayed on the side and shows accurate figure.
+8. Number of moves is displayed on the side and shows accurate figures.
 9. Number of pairs goes up with each correct pair.
 10. Settings menu is loaded when user clicks on the settings icon.
-11. 'Restart' restarts the game when clicked in settings menu.
-12. 'Main Menu' loads up the initial menu screen when clicked in settings menu.
-13. 'Quit Game' lets user exit the game when clicked in settings menu.
-14. 'Play Again' button refreshes the game and let's user start again when clicked in settings menu.
+11. 'Restart' restarts the game when clicked in the settings menu.
+12. 'Main Menu' loads up the initial menu screen when clicked in the settings menu.
+13. 'Quit Game' lets user exit the game when clicked in the settings menu.
+14. 'Play Again' button refreshes the game and lets user start again when clicked in settings menu.
 15. An end messsage is displayed when user finishes the game successfully.
 16. Play again message runs when user finishes.
 
