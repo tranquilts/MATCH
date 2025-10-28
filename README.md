@@ -194,6 +194,25 @@ The interface may not be user-friendly or accessible for all users. | Medium | M
 |Project scope is too complex, rendering difficult to complete within the given timeframe| Medium | High | Prioritise core Features first and add extra features after core functionality proves stable. |
 
 ## Software Development Strategy
+ ### Development strategy 
+ This project will use the agile methodology as it is most suitable for our project. This is because of the adaptablity for changing project requirements. Each iteration will produce a potential end product unless the customer has any concerns in which case it will be easy to adapt to. Each sprint will have a set plan of steps to follow to ensure each sprint is being used effectively: Sprint planning, Daily meetings, Sprint review, Sprint reflection. 
+ ### core development phases
+ #### 1. Initial set up 
+ Set up Git repos. 
+ Create folder structures and fill out readme file. 
+ Create wireframes and story boards. 
+ #### 2. Functionality development
+ Implement core game logic and features. 
+ Create user interface.
+ Add accessibility features. 
+ Ensre design is responsive across all platforms. 
+ #### Refinement and feature completion
+ #### usability and suer testing 
+ #### Final review and deployment
+### Team organisation and collaboration
+### Risk management strategy
+### Quality assurance 
+### Post launch maintenance
 
 ## Test Plan 
 
