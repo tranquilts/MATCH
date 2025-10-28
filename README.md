@@ -196,7 +196,7 @@ The interface may not be user-friendly or accessible for all users. | Medium | M
 ## Software Development Strategy
  ### Development strategy 
  This project will use the agile methodology as it is most suitable for our project. This is because of the adaptablity for changing project requirements. Each iteration will produce a potential end product unless the customer has any concerns in which case it will be easy to adapt to. Each sprint will have a set plan of steps to follow to ensure each sprint is being used effectively: Sprint planning, Daily meetings, Sprint review, Sprint reflection. 
- ### core development phases
+ ### Core development phases
  #### 1. Initial set up 
  Set up Git repos. 
  Create folder structures and fill out readme file. 
@@ -206,13 +206,23 @@ The interface may not be user-friendly or accessible for all users. | Medium | M
  Create user interface.
  Add accessibility features. 
  Ensre design is responsive across all platforms. 
- #### Refinement and feature completion
- #### usability and suer testing 
- #### Final review and deployment
-### Team organisation and collaboration
+ #### 3. Refinement and feature completion
+ Implement settings menu. Create replay function. Finalise visual design. Implement audio/ feedback mechanisms. 
+ Testing (manual/ auto). 
+ #### 4. Usability and user testing
+ Usability testing with users that represent user personas for real world feedback. 
+ Accessibility testing. Bug fixing. 
+ #### 5. Final review and deployment
+ Final testing round. Testing on multiple browsers. Deployment. 
+### Collaboration tools
+GitHub: verison control and code management
+Figma: UI/UX mockups
 ### Risk management strategy
+Ensure all developers have the same level of coding skills. Use branches for individual features and commit regularly especially during merges. Apply correct accessibility testing. 
 ### Quality assurance 
+Create automated tests for core game functions. Mnaula testing for user interaction and accessibility. 
 ### Post launch maintenance
+Collect and analyse user feedback via surveys. Update features if needed and regular updates based on user feedback. 
 
 ## Test Plan 
 
