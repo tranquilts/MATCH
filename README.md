@@ -230,8 +230,9 @@ Collect and analyse user feedback via surveys. Update features if needed and reg
 |----------|------------------|--------------|------------------|----------------|---------|
 |1.1|Launch the game website|Open game URL in browser|Homepage loads successfully with visible 'Start Game' screen| | |
 |1.2|Start a new game|Click on 'Start Game' button|Game board appears with all word tiles displayed| | |
-|1.3|Select two matching words|Click on two matching word tiles|Both tiles remain revealed and colour change is made| | |
-|1.4|Select two non-matching words|Click on two different word tiles|Tiles flip back after a short delay| | |
+|1.3|Select two matching cards|Click on two matching tiles|Both tiles remain revealed and colour change is made|Both tiles remain revealed and colour change is made <img width="948" height="415" alt="image" src="https://github.com/user-attachments/assets/0f1f93f7-0ab8-4891-8cef-ed9736214541" />
+|n/a|
+|1.4|Select two non-matching cards|Click on two different tiles|Tiles flip back after a short delay| | |
 |1.5|Number of moves tracking|Click multiple pairs (both correct and incorrect)|Move counter increases by one after every two card selections and displays accurate count| | |
 |1.6|Number of pairs tracking|Make correct matches one by one|Pair counter increases by one for each successful match and displays total correctly| | |
 |1.7|Double-click same card|Click the same card twice|System ignores second click; no error or crash occurs| | |
