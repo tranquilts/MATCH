@@ -1,7 +1,14 @@
-<script>
 const cards = document.querySelectorAll('.card');
 let flippedCards = [];
 let lockBoard = false;
+
+// 🔀 Shuffle cards every time the game starts
+(function shuffle() {
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * cards.length);
+    card.style.order = randomPos;
+  });
+})();
 
 cards.forEach(card => {
   card.addEventListener('click', () => {
@@ -13,13 +20,13 @@ cards.forEach(card => {
       lockBoard = true;
       const [card1, card2] = flippedCards;
       if (card1.dataset.name === card2.dataset.name) {
-        // Match found
+        // ✅ Match found
         card1.classList.add('matched');
         card2.classList.add('matched');
         flippedCards = [];
         lockBoard = false;
       } else {
-        // No match — flip back after short delay
+        // ❌ No match — flip back after short delay
         setTimeout(() => {
           card1.classList.remove('flip');
           card2.classList.remove('flip');
@@ -30,4 +37,3 @@ cards.forEach(card => {
     }
   });
 });
-</script>
