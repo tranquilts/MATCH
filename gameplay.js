@@ -6,6 +6,7 @@ let pairs = 0;
 
 const movesDisplay = document.getElementById('moves');
 const pairsDisplay = document.getElementById('pairs');
+const totalPairs = 8;
 
 // 🔀 Shuffle cards every time the game starts
 (function shuffle() {
@@ -50,6 +51,17 @@ cards.forEach(card => {
         // ➕ Increment pairs counter
         pairs++;
         pairsDisplay.textContent = pairs;
+
+        // 🎉 Check for win condition
+        if (pairs === totalPairs) {
+          // Save number of moves to localStorage for congrats page
+          localStorage.setItem('movesCount', moves);
+
+          // Redirect to congrats page after short delay (optional for smoother UX)
+          setTimeout(() => {
+            window.location.href = 'congrats.html';
+          }, 1000);
+        }
       
       } else {
         // ❌ No match — flip back after short delay

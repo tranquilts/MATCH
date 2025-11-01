@@ -1,0 +1,101 @@
+/* Page layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFF7DD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 15px solid #91C1C4;
+  box-sizing: border-box;
+}
+
+/* Title */
+h1 {
+  font-family: 'Jacques Francois Shadow', serif;
+  color: #80A1BA;
+  font-size: 5rem;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Game container */
+.game-container {
+  position: relative;
+  background-color: #E8DFCA;
+  border: 1px solid #80A1BA;
+  border-radius: 10px;
+  width: 500px;
+  height: 390px;
+  margin-top: 60px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🎉 Animation for the win message */
+@keyframes fadeBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px) scale(0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(10px) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.win-message {
+  font-family: 'Jacques Francois Shadow', serif;
+  font-size: 36px;
+  color: #4A6C6F;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 6px rgba(199, 76, 0, 0.4);
+  opacity: 0;
+
+  /* ✅ Run animation automatically */
+  animation: fadeBounce 1.5s ease forwards;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.play-again,
+.number-of-moves {
+  width: 200px;
+  padding: 12px 0;
+  font-size: 18px;
+  background-color: #91C4C3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.2s, background-color 0.2s;
+  cursor: pointer;
+}
+
+.play-again:hover {
+  transform: scale(1.05);
+  background-color: #80B4B3;
+}
