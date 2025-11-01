@@ -17,17 +17,82 @@ body {
     /* Border around the whole page */
     border: 15px solid #91C1C4;
     box-sizing: border-box; /* ensures border doesn't cause scrollbars */
+}
 
+h1 {
+    font-family: 'Jacques Francois Shadow', serif;
+    font-size: 64px;
+    color: #4A6C6F;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    z-index:50;
+    position:relative;
+
+}
+h2 {
+    font-family: 'Jacques Francois Shadow', serif;
+    font-size: 36px;
+    color: #4A6C6F;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 /* Game container box */
 .game-container {
+    position: relative;
     background-color: #E8DFCA;
     border: 1px solid #80A1BA;
     border-radius: 10px;
     width: 500px;
     height: 390px;
-    position: absolute;
-    top: 150px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-top: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional soft shadow */
+}
+
+/* Back button styling */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #91C4C3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: transform 0.2s, background-color 0.2s;
+    cursor: pointer;
+}
+
+.menu-button {
+    width: 200px;
+    padding: 12px 0;
+    font-size: 18px;
+    background-color: #91C4C3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s, background-color 0.2s;
+    cursor: pointer;
+}
+
+.button-container {
+    margin-top:18px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    height: 260px;
+}
+
+p{
+    font-family: rochester, cursive;
+    font-size: 30px;
+    color: #C74C00;
+}
