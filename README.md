@@ -195,7 +195,7 @@ The interface may not be user-friendly or accessible for all users. | Medium | M
 
 ## Software Development Strategy
  ### Development strategy 
- This project will use the agile methodology as it is most suitable for our project. This is because of the adaptablity for changing project requirements. Each iteration will produce a potential end product unless the customer has any concerns in which case it will be easy to adapt to. Each sprint will have a set plan of steps to follow to ensure each sprint is being used effectively: Sprint planning, Daily meetings, Sprint review, Sprint reflection. 
+This project will use the agile methodology as it is most suitable for our project. This is because of the adaptablity for changing project requirements. Each iteration will produce a potential end product unless the customer has any concerns in which case it will be easy to adapt to. Each sprint will have a set plan of steps to follow to ensure each sprint is being used effectively: Sprint planning, Daily meetings, Sprint review, Sprint reflection. 
  ### Core development phases
  #### 1. Initial set up 
  Set up Git repos. 
@@ -220,7 +220,7 @@ Figma: UI/UX mockups
 ### Risk management strategy
 Ensure all developers have the same level of coding skills. Use branches for individual features and commit regularly especially during merges. Apply correct accessibility testing. 
 ### Quality assurance 
-Create automated tests for core game functions. Mnaula testing for user interaction and accessibility. 
+Create automated tests for core game functions. Manual testing for user interaction and accessibility. 
 ### Post launch maintenance
 Collect and analyse user feedback via surveys. Update features if needed and regular updates based on user feedback. 
 
