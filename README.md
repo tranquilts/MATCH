@@ -167,14 +167,35 @@ The project includes a set of UI mockups that illustrate the core screens and us
 Purpose: This introduces the game and welcomes the player to begin.
 Elements:
 - A stylised game title and branding,
-- Clear, numbered instructions explaininghow to play
+- Clear, numbered instructions explaining how to play
 - A prominent 'Play Now' button to launch the game
-- A settings icon that provides access to key controls such as pause, restart and quit.
+- A settings icon that provides access to key controls such as pause, restart and quit
 
 <img width="1000" height="750" alt="Instructions Page (3)" src="https://github.com/user-attachments/assets/663bc4eb-a49b-4244-8d39-d29420df0edf" />
 
+### Gameplay Page
 
+Purpose: This is the gameplay page where the user will be able to play the match game.
+Elements:
+- A stylised game title
+- A 4X4 grid of playing tiles for the user to flip over
+- A setting icon in the corner for user to access the settings menu
+- The number of moves displayed clearly on the left hand side
+- Number of matches made displayed clearly on the right hand side
 
+<img width="1000" height="750" alt="image" src="https://github.com/user-attachments/assets/168c7caf-0daf-442e-817e-77d22b8e2084" />
+
+### Settings Page
+
+### Congrats Page
+
+Purpose: Congratulates the user and let's them know they have finished.
+Elements:
+- A stylised congratulations message displayed
+- Number of moves displayed to the user
+- An option to 'play again'
+
+<img width="1000" height="750" alt="image" src="https://github.com/user-attachments/assets/8ecb117d-a915-4ab4-8889-cba231882ab6" />
 
 
 ### Storyboards
