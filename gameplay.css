@@ -58,7 +58,7 @@ h2 {
     top: 150px;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional soft shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Grid layout inside the box */
@@ -66,16 +66,16 @@ h2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 10px; /* space between boxes */
+    gap: 10px;
     width: 100%;
     height: 100%;
-    padding: 10px; /* keeps boxes from touching the edge */
+    padding: 10px;
     box-sizing: border-box;
 }
 
 /* Individual grid boxes */
 .cell {
-    background-color: #B4DEBD; /* minty green */
+    background-color: #B4DEBD;
     border-radius: 6px;
 }
 
@@ -137,4 +137,65 @@ h2 {
 
 .card.matched .front {
     animation: flash 0.6s;
+}
+
+/* Moves counter styling */
+.moves-counter {
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    text-align: center;
+    font-family: 'Itim', cursive;
+    color: #000000;
+}
+
+.moves-counter .moves-label {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#moves {
+    font-size: 2rem;
+    color: #80A1BA;
+    margin: 5px 0 0 0;
+}
+
+/* Pairs counter styling */
+.pairs-counter {
+    position: absolute;
+    top: 250px;
+    right: 150px;
+    text-align: center;
+    font-family: 'Itim', cursive;
+    color: #000000;
+}
+
+.pairs-counter .pairs-label {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#pairs {
+    font-size: 2rem;
+    color: #80A1BA;
+    margin: 5px 0 0 0;
+}
+
+/* Settings icon in top-right corner */
+.settings-icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.settings-icon img {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect */
+.settings-icon img:hover {
+    transform: scale(1.1) rotate(10deg);
 }
