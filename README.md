@@ -160,7 +160,7 @@ This will help maintain consistency through development
 
 
 ## Mock Ups 
-The project includes a set of UI mockups that illustrate the core screens and user flow of the MATCHA image matching game. These mockups were constructed to guide the visual layout and core functionality before development began. 
+The project includes a set of UI mockups that illustrate the core screens and user flow of the MATCH image matching game. These mockups were constructed to guide the visual layout and core functionality before development began. 
 
 ### Starting Page
 
