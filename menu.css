@@ -63,12 +63,11 @@ ol {
     color: #80a1ba;
 }
 
-.start-game-btn{
+.start-game-btn {
     padding: 10px 20px;
     font-size: 1.2em;
     cursor: pointer;
     background-color: #80a1ba;
     color: white;
-    border: none
-    border-radius: 20px
-}
+    border: none;
+    border-color: 20px };
