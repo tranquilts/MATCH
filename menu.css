@@ -20,19 +20,20 @@ body {
     border: 15px solid #91C1C4;
     box-sizing: border-box; /* ensures border doesn't cause scrollbars */
 }
-h1{font-family: 'Jacques Francois Shadow', serif;
+h1 {
+    font-family: 'Jacques Francois Shadow', serif;
 color: #80a1ba;
- font: size 5rem;
+ font: size 96px;
 text-align: center;
 margin: 0; 
 position: absolute; }
 
-.screen{
+.screen {
     display: flex;
     flex-direction: columnn;
     align-items: center;
     width: fit-content;
-    max-width: ;
+    max-width: 500px ;
     padding: 40px;
     background-color: #fff7dd;
     border: 5px solid #000000;
@@ -44,8 +45,7 @@ position: absolute; }
     display: none !important;
 }
 
-.rules-box{
-    margin: ;
+.rules-box {
     width: 100%;
     text-align: left;
 }
@@ -63,7 +63,7 @@ ol {
     color: #80a1ba;
 }
 
-.play-button{
+.start-game-btn{
     padding: 10px 20px;
     font-size: 1.2em;
     cursor: pointer;
