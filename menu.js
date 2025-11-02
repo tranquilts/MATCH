@@ -1,33 +1,16 @@
-//  Access the screens
-const mainMenu = document.getElementById("instructions-screen");
-const settingsMenu = document.getElementById("settings-screen");
-
-// Reference the buttons
+// Main menu buttons
 const playBtn = document.getElementById("start-game-btn");
-const settingsBtn = document.getElementById("settingsButton");
-const backBtn = document.getElementById("settings-back");
+const settingsBtn = document.getElementById("settings-button");
 
-// Function to switch between screens
-function switchScreen(showScreen) {
-  // Hide both
-  mainMenu.classList.add("hidden");
-  settingsMenu.classList.add("hidden");
-
-  // Show the right screen
-  showScreen.classList.remove("hidden");
-}
-
-//  Add event listeners
+// Direct to gameplay page 
 playBtn.addEventListener("click", () => {
-  // Go to gameplay page
-  window.location.href = "gameplay.html";
+    window.location.href = "gameplay.html";
 });
 
+// Direct to settings page 
 settingsBtn.addEventListener("click", () => {
-  switchScreen(settingsMenu);
+    window.location.href = "settings_menu.html";
 });
 
-backBtn.addEventListener("click", () => {
-  switchScreen(mainMenu);
-});
+
 

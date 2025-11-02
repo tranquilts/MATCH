@@ -1,72 +1,142 @@
-/* menu.css */
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
+/* ============================= */
+/* Overall game background */
+/* ============================= */
 body {
-    background-color: #FFF7DD;
-    font-family: Arial, sans-serif;
+    background-color: #FFF7DD;       /* Matches gameplay background */
+    font-family: 'Itim', Arial, sans-serif;
+    margin: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    border: 15px solid #91C1C4;
-    box-sizing: border-box;
+    align-items: center;
+    min-height: 100vh;
 }
 
+/* ============================= */
+/* Title heading                 */
+/* ============================= */
 h1 {
     font-family: 'Jacques Francois Shadow', serif;
-    color: #80a1ba;
-    font-size: 96px;
+    font-size: 48px;
+    color: #80a1ba;                 /* Matches gameplay accent colour */
+    margin: 20px 0;
     text-align: center;
-    margin: 0;
-    position: absolute;
 }
 
+/* ============================= */
+/* Screens (Menu/Game/Settings) */
+/* ============================= */
 .screen {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: fit-content;
+    width: 90%;
     max-width: 500px;
-    padding: 40px;
-    background-color: #fff7dd;
-    border: 5px solid #000000;
+    padding: 25px 20px;
+    border: 5px solid #000;          /* Same as gameplay */
     border-radius: 10px;
+    background-color: #fff7dd;       /* Matches gameplay background */
     position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .hidden {
     display: none !important;
 }
 
-.rules-box {
-    width: 100%;
-    text-align: left;
-}
-
-ol {
-    padding-left: 20px;
-}
-
-#settings-icon {
+/* ============================= */
+/* Settings Icon                 */
+/* ============================= */
+.settings-icon {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 2em;
-    text-decoration: none;
-    color: #80a1ba;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
 }
 
-.start-game-btn {
-    padding: 10px 20px;
+.settings-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ============================= */
+/* Rules tab                   */
+/* ============================= */
+.rules-tab {
+    text-align: left;
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.rules-tab h2 {
+    margin-bottom: 10px;
+    color: #4a7b8c;                /* Aligns with gameplay headings */
+}
+
+/* ============================= */
+/* BUTTONS                        */
+/* ============================= */
+button {
+    padding: 12px 25px;
     font-size: 1.2em;
     cursor: pointer;
+    background-color: #80a1ba;      /* Gameplay button color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #5f8a9c;      /* Slight hover effect for feedback */
+    transform: scale(1.05);
+}
+
+/* apply play icon styling */
+.play-icon {
+    margin-right: 8px;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+/* ============================= */
+/* game grid styling
+/* ============================= */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-gap: 12px;
+    margin: 20px 0;
+}
+
+.card {
+    width: 80px;
+    height: 80px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+    border-radius: 10px;
+    user-select: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card.flip {
     background-color: #80a1ba;
     color: white;
-    border: 2px solid black;
+    transform: rotateY(180deg);
 }
+
+.card.matched {
+    background-color: #4caf50;
+    color: white;
+    cursor: default;
+    transform: scale(1.05);
+}
+
+
