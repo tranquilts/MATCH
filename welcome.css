@@ -1,50 +1,77 @@
-/* Full-page setup */
 html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
-  border: 15px solid #91C1C4;
-  background: url("Instructions Page.png") no-repeat center center;
-  background-size: cover;
-  overflow: hidden;
 }
 
-/* Container for clickable buttons */
-.overlay {
+body {
+  /* 🖼 Background image */
+  background: url('Instructions.png') no-repeat center center;
+  background-size: contain; /* ensures the full image is visible */
+  background-color: #FFF7DD; /* fallback around the edges */
+  border: 15px solid #91C1C4; /* border around full page */
+  box-sizing: border-box;
+  overflow: hidden;
   position: relative;
+
+  /* Center image and prevent stretch */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
 
-/* Invisible buttons */
-#settings-btn,
-#playBtn {
+/* Clickable area for Settings (top-right corner of image) */
+#settings-btn {
   position: absolute;
+  top: 5.5%;
+  right: 6%;
+  width: 70px;
+  height: 70px;
   background: transparent;
   border: none;
   cursor: pointer;
 }
 
-/* 🛠 Settings icon (top right) */
-#settings-btn {
-  top: 4%;
-  right: 4%;
-  width: 6%;
-  height: 10%;
-}
-
-/* ▶️ Play button (bottom center) */
+/* Clickable area for Play Now (bottom-center of image) */
 #playBtn {
-  bottom: 10%;
+  position: absolute;
+  bottom: 9%;
   left: 50%;
   transform: translateX(-50%);
-  width: 20%;
-  height: 9%;
+  width: 250px;
+  height: 90px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-/* Optional hover border for testing */
-#settings-btn:hover,
-#playBtn:hover {
-  outline: 3px solid rgba(128, 161, 186, 0.3);
+/* Optional testing outlines */
+#playBtn:hover, #settings-btn:hover {
+  outline: 2px solid rgba(128, 161, 186, 0.4);
+  border-radius: 10px;
+}
+
+/* Slight scaling adjustment for smaller laptops */
+@media (max-height: 800px) {
+  body {
+    background-size: 90%; /* shrink image slightly */
   }
+
+  #settings-btn {
+    width: 60px;
+    height: 60px;
+  }
+
+  #playBtn {
+    width: 200px;
+    height: 80px;
+  }
+}
