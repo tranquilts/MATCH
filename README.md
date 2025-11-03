@@ -304,3 +304,14 @@ Collect and analyse user feedback via surveys. Update features if needed and reg
 |1.10|Main Menu from Settings|In Settings, click Main Menu|Initial home screen or main menu loads| Main menu button works as expected |n/a|
 |1.11|Quit Game option|In Settings, click Quit Game|Game session closes and user exits game (or returns to exit confirmation screen)| Quit button works as expected |n/a|
 |1.12|Complete all matches|Match all pairs successfully|“You Win!” screen is loaded with number of moves displayed|“You Win!” screen is loaded with number of moves displayed <img width="948" height="415" alt="Screenshot 2025-11-01 215550" src="https://github.com/user-attachments/assets/41e1e447-3ba8-4250-a512-2bbc1785cda7" />|n/a|
+
+
+## Individual Contributions
+Rushda - I helped create the 'gameplay' section for the project, creating the initial wireframe and then coding a 4x4 grid of green tiles. When the user clicks on the tile, it flips around and presents the image. Thereafter, the user must find the matching tiles. Alongside this, I added the 'Number of Moves' element as well as 'Number of Pairs' where the user can see how many moves they've made and how many pairs they've made/have left. I further created the congrats page, where the user is presented with the 'Congrats' message and is presented their total number of moves along with an option to play again, where they are bought back to the gameplay screen.
+
+Khadijah -
+
+Hafsah -
+
+## Success of Project
+Overall, the project successfully met all the set requirements, delivering a smooth, responsive, and user-friendly single-player game that runs directly in the browser without downloads. The interface is simple and intuitive, allowing users to start, restart, or quit the game easily via the settings menu, while accurate move and pair counters, clear feedback when matches are made, and an end message enhance gameplay clarity. The inclusion of accessible rules and responsive design ensures usability across desktop, tablet, and mobile devices. The game effectively caters to both user personas — providing the clarity and professionalism preferred by Persona 1 and the efficiency and interactivity valued by Persona 2. Although currently limited to single-player mode, the system performs reliably and achieves its intended purpose, making the project an overall success.
