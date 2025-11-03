@@ -51,11 +51,21 @@ font-family: 'ITIM', cursive;
 transition: background-color 0.2s ease)
 }
 
+/* Settings icon in top-right corner */
 .settings-icon {
-width: 5px;
-position: absolute;
-top:20px;
-right: 20px;
-cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
 }
 
+.settings-icon img {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect */
+.settings-icon img:hover {
+    transform: scale(1.1) rotate(10deg);
+}
