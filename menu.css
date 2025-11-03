@@ -23,12 +23,14 @@ color: #C74C00;
 margin-top: 20px;
 }
 
+/*Instruction header 'How To Play'
 .instructions-title {
 font-family:'Itim', cursive;
 font-size: 1.7em;
 margin-top: 20px;
 }
 
+/*Gameplay instructions
 .instructions {
 font-family: 'Itim', cursive;
 font-size: 1.2rem
@@ -36,6 +38,7 @@ line-height: 1.8rem;
 margin-bottomm 20px;
 }
 
+/*Play Now button styling
 .play-btn {
 width: 260px;
 padding: 18px 0;
@@ -50,6 +53,7 @@ box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 font-family: 'Itim', cursive;
 transition: background-color 0.2s ease)
 }
+/*Play Button movement
 .play-btn:hover {
     transform: scale(1.03);
     }
@@ -60,12 +64,11 @@ transition: background-color 0.2s ease)
     opacity: 0.9;
     }
     
-    
-
 /* Settings icon in top-right corner */
 .settings-icon {
     position: absolute;
-    top: 
+    top: 30px;
+    right: 30px;
 }
 
 .settings-icon img {
