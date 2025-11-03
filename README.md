@@ -314,6 +314,6 @@ Hafsah -
 - updated corresponding parts of the readme file
 - Created software development strategy
 - Created a goodbye page for when users quit the game.
-- 
+
 ## Success of Project
 Overall, the project successfully met all the set requirements, delivering a smooth, responsive, and user-friendly single-player game that runs directly in the browser without downloads. The interface is simple and intuitive, allowing users to start, restart, or quit the game easily via the settings menu, while accurate move and pair counters, clear feedback when matches are made, and an end message enhance gameplay clarity. The inclusion of accessible rules and responsive design ensures usability across desktop, tablet, and mobile devices. The game effectively caters to both user personas — providing the clarity and professionalism preferred by Persona 1 and the efficiency and interactivity valued by Persona 2. Although currently limited to single-player mode, the system performs reliably and achieves its intended purpose, making the project an overall success.
