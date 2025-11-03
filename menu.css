@@ -1,31 +1,33 @@
-/* ===========================
-   MATCH MENU SCREEN - FINAL WORKING VERSION
-   =========================== */
-
 html, body {
-  height: 100%;
-  width: 100%;
   margin: 0;
   padding: 0;
+  height: 100%;
   overflow: hidden;
-}
-
-body {
-  background: url('instructions.png') no-repeat center center fixed;
-  background-size: 100% 100%;
   background-color: #FFF7DD;
   border: 15px solid #91C1C4;
   box-sizing: border-box;
-  position: relative;
 }
 
-/* Overlay layer */
-.overlay {
+/* Background image fills screen but keeps shape */
+.background {
   position: absolute;
-  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* show full wireframe */
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
-/* ⚙️ Settings clickable area */
+/* Clickable area container */
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* ⚙️ Settings button (top-right) */
 #settings-btn {
   position: absolute;
   top: 10.8vh;
@@ -35,10 +37,9 @@ body {
   background: transparent;
   border: none;
   cursor: pointer;
-  border-radius: 50%;
 }
 
-/* ▶️ Play Now clickable area */
+/* ▶️ Play Now button (bottom-center) */
 #playBtn {
   position: absolute;
   bottom: 14.6vh;
@@ -52,24 +53,8 @@ body {
   cursor: pointer;
 }
 
-/* Hover outlines (for testing) */
-#playBtn:hover, #settings-btn:hover {
-  outline: 3px solid rgba(128, 161, 186, 0.4);
-  border-radius: 3vw;
-}
-
-/* Responsive layout */
-@media (max-width: 900px) {
-  #settings-btn {
-    top: 9.5vh;
-    right: 7.8vw;
-    width: 7vw;
-    height: 7vw;
-  }
-
-  #playBtn {
-    bottom: 11.8vh;
-    width: 26vw;
-    height: 7vw;
-  }
+/* Hover outline for testing */
+#settings-btn:hover,
+#playBtn:hover {
+  outline: 2px solid rgba(128, 161, 186, 0.5);
 }
