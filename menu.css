@@ -1,7 +1,5 @@
-
-
 /* ===========================
-   MATCH MENU SCREEN - PORTABLE VERSION
+   MATCH MENU SCREEN - FINAL WORKING VERSION
    =========================== */
 
 html, body {
@@ -12,9 +10,8 @@ html, body {
   overflow: hidden;
 }
 
-/* 🎨 Main screen with your wireframe */
 body {
-  background: url("instructions.png") no-repeat center center fixed;
+  background: url('instructions.PNG') no-repeat center center fixed;
   background-size: 100% 100%;
   background-color: #FFF7DD;
   border: 15px solid #91C1C4;
@@ -28,11 +25,11 @@ body {
   inset: 0;
 }
 
-/* ⚙️ Settings icon click zone */
+/* ⚙️ Settings clickable area */
 #settings-btn {
   position: absolute;
-  top: 11vh;
-  right: 10vw;
+  top: 10.8vh;
+  right: 9.8vw;
   width: 5vw;
   height: 5vw;
   background: transparent;
@@ -41,27 +38,27 @@ body {
   border-radius: 50%;
 }
 
-/* ▶️ Play Now button zone */
+/* ▶️ Play Now clickable area */
 #playBtn {
   position: absolute;
-  bottom: 15vh;
+  bottom: 14.6vh;
   left: 50%;
   transform: translateX(-50%);
-  width: 19vw;
-  height: 6vw;
+  width: 18.5vw;
+  height: 5vw;
   background: transparent;
   border: none;
   border-radius: 3vw;
   cursor: pointer;
 }
 
-/* Hover outlines for testing */
+/* Hover outlines (for testing) */
 #playBtn:hover, #settings-btn:hover {
   outline: 3px solid rgba(128, 161, 186, 0.45);
-   border-radius: 32;
+  border-radius: 3vw;
 }
 
-/* 📱 Responsive adjustment */
+/* Responsive layout */
 @media (max-width: 900px) {
   #settings-btn {
     top: 9.5vh;
