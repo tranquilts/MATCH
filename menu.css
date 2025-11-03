@@ -8,8 +8,8 @@ body {
 background-color: #FFF7DD;
 font-family: Arial, sans-serif;
 display: flex;
-fled-direction: column;
-aligm-items: center;
+flex-direction: column;
+align-items: center;
 justify-content: center;
 text-aligm: center;
 border: 15px solid #01C1C4;
@@ -17,7 +17,7 @@ box-sizing: botder-box;
 }
 
 .title {
-fomt-family: 'Jacques Francois Shadow', serif;
+font-family: 'Jacques Francois Shadow', serif;
 font-size: 2rem;
 color: #C74C00;
 margin-top: 20px;
@@ -47,15 +47,25 @@ color:white
 cursor: pointer;
 margin-top: 35px;
 box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-font-family: 'ITIM', cursive;
+font-family: 'Itim', cursive;
 transition: background-color 0.2s ease)
 }
+.play-btn:hover {
+    transform: scale(1.03);
+    }
+
+.play-btn:before {
+    content: "▶️";
+    font-size:1rem;
+    opacity: 0.9;
+    }
+    
+    
 
 /* Settings icon in top-right corner */
 .settings-icon {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 
 }
 
 .settings-icon img {
