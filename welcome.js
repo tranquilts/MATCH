@@ -5,5 +5,5 @@ document.getElementById("playBtn").addEventListener("click", () => {
 
 // Go to settings page
 document.getElementById("settings-btn").addEventListener("click", () => {
-  window.location.href = "menu.html";
+  window.location.href = "settings_menu.html";
 });
