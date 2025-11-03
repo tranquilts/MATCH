@@ -1,45 +1,46 @@
+/* ===========================
+   MATCH MENU SCREEN (Final)
+   =========================== */
+
 html, body {
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
-  height: 100%;
   overflow: hidden;
-  background-color: #FFF7DD;
-  border: 15px solid #91C1C4;
   box-sizing: border-box;
 }
 
-/* Background image fills screen but keeps shape */
-.background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* show full wireframe */
-  top: 0;
-  left: 0;
-  z-index: 0;
+/* 🎨 Your wireframe background */
+body {
+  background: url("instructions.PNG") no-repeat center center fixed;
+  background-size: contain;       /* Keep Figma proportions */
+  background-color: #FFF7DD;      /* Fill outside image area */
+  border: 15px solid #91C1C4;     /* Page border */
+  position: relative;
 }
 
-/* Clickable area container */
+/* Transparent overlay for clickable buttons */
 .overlay {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  inset: 0;
   z-index: 1;
 }
 
-/* ⚙️ Settings button (top-right) */
+/* ⚙️ Settings Button (top-right corner) */
 #settings-btn {
   position: absolute;
-  top: 10.8vh;
-  right: 9.8vw;
+  top: 10.8vh;     
+  right: 9.8vw;    
   width: 5vw;
   height: 5vw;
   background: transparent;
   border: none;
   cursor: pointer;
+  border-radius: 50%;
 }
 
-/* ▶️ Play Now button (bottom-center) */
+/* ▶️ Play Now Button (bottom-center oval) */
 #playBtn {
   position: absolute;
   bottom: 14.6vh;
@@ -53,8 +54,24 @@ html, body {
   cursor: pointer;
 }
 
-/* Hover outline for testing */
+/* Optional hover highlight (for testing) */
 #settings-btn:hover,
 #playBtn:hover {
   outline: 2px solid rgba(128, 161, 186, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  #settings-btn {
+    top: 9.5vh;
+    right: 7.8vw;
+    width: 7vw;
+    height: 7vw;
+  }
+
+  #playBtn {
+    bottom: 11.8vh;
+    width: 26vw;
+    height: 7vw;
+  }
 }
