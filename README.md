@@ -300,7 +300,7 @@ Collect and analyse user feedback via surveys. Update features if needed and reg
 |1.6|Number of pairs tracking|Make correct matches one by one|Pair counter increases by one for each successful match and displays total correctly|Pair counter increases by one for each successful match and displays total correctly <img width="948" height="415" alt="Screenshot 2025-11-01 144607" src="https://github.com/user-attachments/assets/86aadafc-ca6d-40a3-8fbc-83ca2b6c3081" />|n/a|
 |1.7|Double-click same card|Click the same card twice|System ignores second click; no error or crash occurs|System ignores second click; no error or crash occurs|n/a|
 |1.8|Settings menu opens|Click on the Settings icon/button|Settings menu loads successfully, displaying available options| | |
-|1.9|Restart from Settings menu|In Settings, click Restart Game|Game board resets and starts a new round immediately| Restart button works as expected |
-|1.10|Main Menu from Settings|In Settings, click Main Menu|Initial home screen or main menu loads| Main menu button works as expected | |
-|1.11|Quit Game option|In Settings, click Quit Game|Game session closes and user exits game (or returns to exit confirmation screen)| Quit button works as expected | |
+|1.9|Restart from Settings menu|In Settings, click Restart Game|Game board resets and starts a new round immediately| Restart button works as expected |n/a|
+|1.10|Main Menu from Settings|In Settings, click Main Menu|Initial home screen or main menu loads| Main menu button works as expected |n/a|
+|1.11|Quit Game option|In Settings, click Quit Game|Game session closes and user exits game (or returns to exit confirmation screen)| Quit button works as expected |n/a|
 |1.12|Complete all matches|Match all pairs successfully|“You Win!” screen is loaded with number of moves displayed|“You Win!” screen is loaded with number of moves displayed <img width="948" height="415" alt="Screenshot 2025-11-01 215550" src="https://github.com/user-attachments/assets/41e1e447-3ba8-4250-a512-2bbc1785cda7" />|n/a|
