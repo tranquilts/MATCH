@@ -1,10 +1,10 @@
-/* ========== GENERAL PAGE ========== */
+/* ========== PAGE LAYOUT ========== */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #FFF7DD; /* Light cream */
-  border: 15px solid #91C1C4; /* Teal border */
+  background-color: #FFF7DD; /* cream background */
+  border: 15px solid #91C1C4; /* teal border */
   box-sizing: border-box;
   text-align: center;
   display: flex;
@@ -12,13 +12,14 @@ html, body {
   align-items: center;
   justify-content: flex-start;
   position: relative;
+  overflow: hidden;
 }
 
 /* ========== SETTINGS ICON ========== */
-#settings-btn {
+#settings-btn img{
   position: absolute;
   top: 40px;
-  right: 50px;
+  right: 60px;
   width: 55px;
   height: 55px;
   cursor: pointer;
@@ -34,47 +35,57 @@ h1 {
   font-family: 'Jacques Francois Shadow', serif;
   font-size: 5rem;
   color: #80A1BA;
-  margin-top: 60px;
-  margin-bottom: 10px;
+  margin-top: 80px;
+  margin-bottom: 15px;
   letter-spacing: 4px;
 }
 
+/* "How To Play" subtitle */
 h2 {
-  font-family: 'Itim', cursive;
-  font-size: 1.6rem;
+  font-family: 'Itim', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
   color: #000;
-  margin-bottom: 20px;
+  letter-spacing: 0.3px;
+  margin-bottom: 25px;
 }
 
-/* ========== INSTRUCTIONS (no border, Itim font) ========== */
+/* ========== INSTRUCTIONS (exact typography + spacing) ========== */
 ol {
   list-style-position: inside;
-  font-family: 'Itim', cursive;
-  font-size: 1.2rem;
+  font-family: 'Itim', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 400;
   color: #000;
-  font-weight: normal;
-  line-height: 1.9;
-  margin: 0 auto 60px;
-  padding: 0;
+  line-height: 1.95;
+  letter-spacing: 0.4px;
   text-align: center;
+  margin: 0 auto 70px;
+  padding: 0;
+  max-width: 600px;
 }
 
 /* ========== PLAY BUTTON ========== */
 #playBtn {
-  font-family: 'Itim', cursive;
+  font-family: 'Itim', sans-serif;
   font-size: 1.3rem;
-  background-color: #80A1BA; /* Blue shade */
-  color: #FFF;
+  font-weight: 500;
+  background-color: #91AFC4; /*Blue 
+  color: #FFFFFF;
   border: none;
-  border-radius: 30px;
-  width: 200px;
-  height: 55px;
+  border-radius: 30px;  /* capsule shape */
+  width: 180px;
+  height: 50px;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 90px;
 }
 
 #playBtn:hover {
-  background-color: #91C1C4;
-  transform: translateY(-3px);
+  background-color: #A9C4D7;
+  transform: translateY(-2px);
 }
