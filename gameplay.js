@@ -76,6 +76,8 @@ cards.forEach(card => {
   });
 });
 
+
+
 // ⚙️ Settings button click handler
 const settingsButton = document.getElementById('settingsButton');
 settingsButton.addEventListener('click', () => {
