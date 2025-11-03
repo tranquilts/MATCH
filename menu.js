@@ -1,9 +1,9 @@
-// Navigate to gameplay page
+// Go to gameplay page
 document.getElementById("playBtn").addEventListener("click", () => {
   window.location.href = "gameplay.html";
 });
 
-// Navigate to settings page
+// Go to settings page
 document.getElementById("settings-btn").addEventListener("click", () => {
-  window.location.href = "settings.html";
+  window.location.href = "menu.html";
 });
