@@ -6,7 +6,7 @@ html, body {
 
 body {
   /* 🖼 Background image */
-  background: url('Instructions.png') no-repeat center center;
+  background: url('instructions.png') no-repeat center center;
   background-size: contain; /* ensures the full image is visible */
   background-color: #FFF7DD; /* fallback around the edges */
   border: 15px solid #91C1C4; /* border around full page */
@@ -53,7 +53,7 @@ body {
   cursor: pointer;
 }
 
-/* Optional testing outlines */
+/*testing outlines */
 #playBtn:hover, #settings-btn:hover {
   outline: 2px solid rgba(128, 161, 186, 0.4);
   border-radius: 10px;
