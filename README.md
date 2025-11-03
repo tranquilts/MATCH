@@ -199,6 +199,15 @@ Elements:
 
 
 ### Storyboards
+The project includes storyboards that documents the user experience and the user flow of the MATCH game.
+
+## Starting Page
+The starting page provides instructions on how to play, a menu to access functions and a play button to start playing.
+
+<img width="2500" height="1257" alt="Instructions Page Storyboard" src="https://github.com/user-attachments/assets/adad381e-9e81-4eb7-826c-6bb1e7a5fdb5" />
+
+## Flowcharts
+
 
 
 ## Risk Management
