@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-  background: url('instructions.PNG') no-repeat center center fixed;
+  background: url('instructions.png') no-repeat center center fixed;
   background-size: 100% 100%;
   background-color: #FFF7DD;
   border: 15px solid #91C1C4;
@@ -54,7 +54,7 @@ body {
 
 /* Hover outlines (for testing) */
 #playBtn:hover, #settings-btn:hover {
-  outline: 3px solid rgba(128, 161, 186, 0.45);
+  outline: 3px solid rgba(128, 161, 186, 0.4);
   border-radius: 3vw;
 }
 
