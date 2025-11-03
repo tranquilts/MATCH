@@ -1,84 +1,81 @@
+/* === General Page Layout === */
 html, body {
-height: 100%;
-margin: 0;
-padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF7DD; /* cream background */
+  border: 15px solid #91C1C4; /* blue border */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  font-family: 'Itim', cursive;
+  position: relative;
 }
 
-body {
-background-color: #FFF7DD;
-font-family: Arial, sans-serif;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-aligm: center;
-border: 15px solid #01C1C4;
-box-sizing: botder-box;
+/* === Settings Icon === */
+#settings-btn {
+  position: absolute;
+  top: 35px;
+  right: 45px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  filter: hue-rotate(165deg) brightness(0.9);
+  transition: transform 0.3s ease;
 }
 
-.title {
-font-family: 'Jacques Francois Shadow', serif;
-font-size: 2rem;
-color: #C74C00;
-margin-top: 20px;
+#settings-btn:hover {
+  transform: rotate(20deg) scale(1.1);
 }
 
-/*Instruction header 'How To Play'
-.instructions-title {
-font-family:'Itim', cursive;
-font-size: 1.7em;
-margin-top: 20px;
+/* === Title === */
+h1 {
+  font-family: 'Jacques Francois Shadow', serif;
+  color: #80A1BA;
+  font-size: 5rem;
+  letter-spacing: 3px;
+  margin-top: 60px;
+  margin-bottom: 10px;
 }
 
-/*Gameplay instructions
-.instructions {
-font-family: 'Itim', cursive;
-font-size: 1.2rem
-line-height: 1.8rem;
-margin-bottomm 20px;
+/* === Subtitle === */
+h2 {
+  color: #000;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
 }
 
-/*Play Now button styling
-.play-btn {
-width: 260px;
-padding: 18px 0;
-font-size: 1.6rem
-background-color: #80A1BA;
-border: none;
-border-radius: 15px;
-color:white
-cursor: pointer;
-margin-top: 35px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-font-family: 'Itim', cursive;
-transition: background-color 0.2s ease)
-}
-/*Play Button movement
-.play-btn:hover {
-    transform: scale(1.03);
-    }
-
-.play-btn:before {
-    content: "▶️";
-    font-size:1rem;
-    opacity: 0.9;
-    }
-    
-/* Settings icon in top-right corner */
-.settings-icon {
-    position: absolute;
-    top: 30px;
-    right: 30px;
+/* === Instructions === */
+ol {
+  list-style-position: inside;
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: bold;
+  line-height: 1.8;
+  margin: 0 auto 50px;
+  padding: 0;
+  max-width: 600px;
 }
 
-.settings-icon img {
-    width: 55px;
-    height: 55px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
+/* === Play Button === */
+#playBtn {
+  width: 200px;
+  padding: 12px 0;
+  font-size: 1.3rem;
+  background-color: #80A1BA;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Itim', cursive;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
-/* Hover effect */
-.settings-icon img:hover {
-    transform: scale(1.1) rotate(10deg);
+#playBtn:hover {
+  background-color: #91C1C4;
+  transform: translateY(-3px);
 }
