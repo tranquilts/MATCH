@@ -115,8 +115,8 @@ For each round, the game tracks the number of moves the player makes to match im
 ### **Match count**
 The game tracks each correct match while they play. 
 
-## **Pause Menu**
-The game loads up the pause menu when the pause icon is clicked, which includes 'Restart', 'Main Menu', and 'Quit Game'.
+## **Settings Menu**
+The game loads up the pause menu when the settings icon is clicked, which includes 'Restart', 'Main Menu', and 'Quit Game'.
   
 ### **Replay function**
 The replay function will be of use when the game has ended. This way the user will have a choice of whether or not they wish to continue the game and restart.
@@ -186,7 +186,7 @@ Elements:
 <img width="1000" height="750" alt="image" src="https://github.com/user-attachments/assets/168c7caf-0daf-442e-817e-77d22b8e2084" />
 
 
-### Pause Menu
+### Settings Menu
 
 Purpose:
 Allows users to decide their next move with the game. With options such as restart, main menu and quit. Quitting the game leads to a goodbye message. 
@@ -225,6 +225,12 @@ The project includes storyboards that documents the user experience and the user
 The starting page provides instructions on how to play, a menu to access functions and a play button to start playing.
 
 <img width="2500" height="1257" alt="Instructions Page Storyboard" src="https://github.com/user-attachments/assets/adad381e-9e81-4eb7-826c-6bb1e7a5fdb5" />
+
+## Gameplay Page
+The gameplay page presents the MATCH game screen to the user in order to start playing the game, alongside displaying number of moves, correct pairs and a settings option.
+
+<img width="2500" height="1257" alt="image" src="https://github.com/user-attachments/assets/56cd1531-4282-4e18-9be6-bed21b7454be" />
+
 
 ## Flowcharts
 
