@@ -239,10 +239,6 @@ The congrats page presents a congrats message/animation to the user and shows th
 <img width="2500" height="1257" alt="image" src="https://github.com/user-attachments/assets/018af7a6-5ea0-41f7-b4e4-9ee085ef5586" />
 
 
-## Flowcharts
-
-
-
 ## Risk Management
 Risk management involves identifying potential issues that could affect the success of the Match Game project and planning strategies that reduce or eliminate their impact. By assessing technical, design and collaboration risks early, the team can deliver on smooth development and timely completion.
 
