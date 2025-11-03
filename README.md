@@ -305,7 +305,7 @@ Collect and analyse user feedback via surveys. Update features if needed and reg
 
 
 ## Individual Contributions
-Rushda - I helped create the 'gameplay' section for the project, creating the initial wireframe and then coding a 4x4 grid of green tiles. When the user clicks on the tile, it flips around and presents the image. Thereafter, the user must find the matching tiles. Alongside this, I added the 'Number of Moves' element as well as 'Number of Pairs' where the user can see how many moves they've made and how many pairs they've made/have left. I further created the congrats page, where the user is presented with the 'Congrats' message and is presented their total number of moves along with an option to play again, where they are bought back to the gameplay screen.
+Rushda - I helped create the 'gameplay' section for the project, creating the initial wireframe and then coding a 4x4 grid of green tiles. When the user clicks on the tile, it flips around and presents the image. Thereafter, the user must find the matching tiles. Alongside this, I added the 'Number of Moves' element as well as 'Number of Pairs' where the user can see how many moves they've made and how many pairs they've made/have left. I further created the congrats page, where the user is presented with the 'Congrats' message and is presented their total number of moves along with an option to play again, where they are bought back to the gameplay screen. I also created the operating system environment, usability, and basic needs. Finally, I created the test table and highlighted the success of our project at the end.
 
 Khadijah -
 
