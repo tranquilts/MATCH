@@ -83,6 +83,26 @@ h2 {
     cursor: pointer;
 }
 
+/* Hover effect */
+.menu-button:hover {
+  background-color: #b8d4e3;         /* hover color */
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* Click (active) effect */
+.menu-button:active {
+  background-color: #9bbdd2;         /* click color */
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Optional focus style (keyboard navigation) */
+.menu-button:focus {
+  outline: 3px solid rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+}
+
 .button-container {
     margin-top:18px;
     display:flex;
