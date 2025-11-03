@@ -3,34 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MATCH</title>
+  <title>MATCH – Start Page</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Jacques+Francois+Shadow&display=swap" rel="stylesheet" />
-  
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="menu.css" />
 </head>
 
 <body>
   <!-- Settings Icon -->
-  <img id="settings-btn" src="settings-icon.png" alt="Settings" />
+  <button id="settings-btn">
+    <img src="settings-icon.png" alt="Settings" width="50" />
+  </button>
 
   <!-- Title -->
   <h1>MATCH</h1>
+
+  <!-- Subtitle -->
   <h2>How To Play</h2>
 
-  <!-- Instructions -->
+  <!-- Instructions List -->
   <ol>
     <li>Click a card to reveal an image.</li>
     <li>Click another to find its match.</li>
     <li>Matches stay up; mismatches flip back.</li>
     <li>Match all cards to win!</li>
-    <li>Use the settings menu to pause, restart and quit.</li>
+    <li>Use the menu to restart or quit.</li>
   </ol>
 
   <!-- Play Button -->
-  <button id="playBtn">Play Now</button>
+  <button id="playBtn"><span class="play-icon">▶</span> Play Now</button>
 
-  <script src="script.js"></script>
+  <!-- JS -->
+  <script src="menu.js"></script>
 </body>
 </html>
