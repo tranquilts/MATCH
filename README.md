@@ -218,19 +218,21 @@ Elements:
 <img width="1000" height="750" alt="image" src="https://github.com/user-attachments/assets/8ecb117d-a915-4ab4-8889-cba231882ab6" />
 
 
-### Storyboards
+## Storyboards
 The project includes storyboards that documents the user experience and the user flow of the MATCH game.
 
-## Starting Page
+### Starting Page
 The starting page provides instructions on how to play, a menu to access functions and a play button to start playing.
 
 <img width="2500" height="1257" alt="Instructions Page Storyboard" src="https://github.com/user-attachments/assets/adad381e-9e81-4eb7-826c-6bb1e7a5fdb5" />
 
-## Gameplay Page
+### Gameplay Page
 The gameplay page presents the MATCH game screen to the user in order to start playing the game, alongside displaying number of moves, correct pairs and a settings option.
 
 <img width="2500" height="1257" alt="image" src="https://github.com/user-attachments/assets/56cd1531-4282-4e18-9be6-bed21b7454be" />
 
+### Settings Page
+### Congrats Page
 
 ## Flowcharts
 
