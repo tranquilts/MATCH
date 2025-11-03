@@ -115,8 +115,8 @@ For each round, the game tracks the number of moves the player makes to match im
 ### **Match count**
 The game tracks each correct match while they play. 
 
-## **Settings Menu**
-The game loads up the settings menu when the settings icon is clicked, which includes 'Restart', 'Main Menu', and 'Quit Game'.
+## **Pause Menu**
+The game loads up the pause menu when the pause icon is clicked, which includes 'Restart', 'Main Menu', and 'Quit Game'.
   
 ### **Replay function**
 The replay function will be of use when the game has ended. This way the user will have a choice of whether or not they wish to continue the game and restart.
@@ -179,13 +179,33 @@ Purpose: This is the gameplay page where the user will be able to play the match
 Elements:
 - A stylised game title
 - A 4X4 grid of playing tiles for the user to flip over
-- A setting icon in the corner for user to access the settings menu
+- A pause icon in the corner for user to access the pause menu
 - The number of moves displayed clearly on the left hand side
 - Number of matches made displayed clearly on the right hand side
 
 <img width="1000" height="750" alt="image" src="https://github.com/user-attachments/assets/168c7caf-0daf-442e-817e-77d22b8e2084" />
 
-### Settings Page
+
+### Pause Menu
+
+Purpose:
+Allows users to decide their next move with the game. With options such as restart, main menu and quit. Quitting the game leads to a goodbye message. 
+
+Elements:
+- Settings title
+- Stylised, functional navigation buttons
+  
+<img width="1910" height="958" alt="image" src="https://github.com/user-attachments/assets/4ef8d69d-c54d-4c68-947c-993d67722d67" />
+
+
+### Goodbye page
+
+Purpose: 
+To diplay a friendly goodbye message if the user wishes to quit the game. 
+
+ <img width="1905" height="948" alt="image" src="https://github.com/user-attachments/assets/8eeb6ba2-9467-4551-9995-6d21f6c36250" />
+
+
 
 ### Congrats Page
 
@@ -267,8 +287,8 @@ Collect and analyse user feedback via surveys. Update features if needed and reg
 |1.6|Number of pairs tracking|Make correct matches one by one|Pair counter increases by one for each successful match and displays total correctly|Pair counter increases by one for each successful match and displays total correctly <img width="948" height="415" alt="Screenshot 2025-11-01 144607" src="https://github.com/user-attachments/assets/86aadafc-ca6d-40a3-8fbc-83ca2b6c3081" />|n/a|
 |1.7|Double-click same card|Click the same card twice|System ignores second click; no error or crash occurs|System ignores second click; no error or crash occurs|n/a|
 |1.8|Settings menu opens|Click on the Settings icon/button|Settings menu loads successfully, displaying available options| | |
-|1.9|Restart from Settings menu|In Settings, click Restart Game|Game board resets and starts a new round immediately| | |
-|1.10|Main Menu from Settings|In Settings, click Main Menu|Initial home screen or main menu loads| | |
-|1.11|Quit Game option|In Settings, click Quit Game|Game session closes and user exits game (or returns to exit confirmation screen)| | |
-|1.12|Play Again button|In Settings, click Play Again|Game refreshes and a new session begins, allowing user to start over immediately| | |
+|1.9|Restart from Settings menu|In Settings, click Restart Game|Game board resets and starts a new round immediately| Restart button works as expected |
+|1.10|Main Menu from Settings|In Settings, click Main Menu|Initial home screen or main menu loads| Main menu button works as expected | |
+|1.11|Quit Game option|In Settings, click Quit Game|Game session closes and user exits game (or returns to exit confirmation screen)| Quit button works as expected | |
+
 |1.13|Complete all matches|Match all pairs successfully|“You Win!” screen is loaded with number of moves displayed|“You Win!” screen is loaded with number of moves displayed <img width="948" height="415" alt="Screenshot 2025-11-01 215550" src="https://github.com/user-attachments/assets/41e1e447-3ba8-4250-a512-2bbc1785cda7" />|n/a|
