@@ -31,8 +31,8 @@ body {
 /* ⚙️ Settings icon click zone */
 #settings-btn {
   position: absolute;
-  top: 10.8vh;
-  right: 9.8vw;
+  top: 11vh;
+  right: 10vw;
   width: 5vw;
   height: 5vw;
   background: transparent;
@@ -44,11 +44,11 @@ body {
 /* ▶️ Play Now button zone */
 #playBtn {
   position: absolute;
-  bottom: 14.6vh;
+  bottom: 15vh;
   left: 50%;
   transform: translateX(-50%);
-  width: 18.5vw;
-  height: 5vw;
+  width: 19vw;
+  height: 6vw;
   background: transparent;
   border: none;
   border-radius: 3vw;
