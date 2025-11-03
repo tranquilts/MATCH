@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MATCH</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATCH – Start Page</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="menu.css">
-    
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <!-- Settings icon -->
+  <img id="settings-btn" src="settings-icon.png" alt="Settings">
 
-        <img src="settings-icon.png" alt="Settings" id="settings-btn">
-    </div>
+  <!-- Game title -->
+  <h1>MATCH</h1>
+  <h2>How To Play</h2>
 
-    <h1>MATCH</h1>
+  <!-- Game instructions -->
+  <ol>
+    <li>Click a card to reveal an image.</li>
+    <li>Click another to find its match.</li>
+    <li>Matches stay up; mismatches flip back.</li>
+    <li>Match all cards to win!</li>
+    <li>Use the settings menu to pause, restart, or quit.</li>
+  </ol>
 
-    <h2 class="instructions-title">How To Play</h2>
-        <div class="instructions">
-        <ol>
-            <li>Click a card to reveal an image.</li>
-            <li>Click another to find its match.</li>
-            <li>Matches stay up; mismatches flip back.</li>
-            <li>Match all cards to win!</li>
-            <li>Use the menu (accessed via the settings icon at the top) to pause, restart and quit.</li>
-        </ol>
-    </div>
+  <!-- Play button -->
+  <button id="playBtn">▶ Play Now</button>
 
-    <button id="playBtn class="play-btn">▶️Play Now</button>
-
-script src="menu.js"></script>
-
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
-
 
 
 
