@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // If "Settings" button is clicked → go to settings page
   if (settingsBtn) {
     settingsBtn.addEventListener("click", () => {
-      window.location.href = "settings.html";
+      window.location.href = "settings_menu.html";
     });
   }
 });
