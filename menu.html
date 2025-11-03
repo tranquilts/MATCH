@@ -4,39 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MATCH – Start Page</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="menu.css" />
+  <link rel="stylesheet" href="welcome.css" />
 </head>
-
 <body>
-  <!-- Settings Icon -->
-  <button id="settings-btn">
-    <img src="settings-icon.png" alt="Settings" width="50" />
-  </button>
+  <!-- Background image (your instruction wireframe) -->
+  <div class="overlay">
+    <!-- Clickable invisible buttons -->
+    <button id="settings-btn" aria-label="Settings"></button>
+    <button id="playBtn" aria-label="Play Now"></button>
+  </div>
 
-  <!-- Title -->
-  <h1>MATCH</h1>
-
-  <!-- Subtitle -->
-  <h2>How To Play</h2>
-
-  <!-- Instructions List -->
-  <ol>
-    <li>Click a card to reveal an image.</li>
-    <li>Click another to find its match.</li>
-    <li>Matches stay up; mismatches flip back.</li>
-    <li>Match all cards to win!</li>
-    <li>Use the menu to restart or quit.</li>
-  </ol>
-
-  <!-- Play Button -->
-  <button id="playBtn"><span class="play-icon">▶</span> Play Now</button>
-
-  <!-- JS -->
-  <script src="menu.js"></script>
+  <script src="welcome.js"></script>
 </body>
 </html>
