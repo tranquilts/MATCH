@@ -232,6 +232,8 @@ The gameplay page presents the MATCH game screen to the user in order to start p
 <img width="2500" height="1257" alt="image" src="https://github.com/user-attachments/assets/56cd1531-4282-4e18-9be6-bed21b7454be" />
 
 ### Settings Page
+<img width="554" height="295" alt="image" src="https://github.com/user-attachments/assets/a8561b96-488f-47a4-8e5a-866fad904a06" />
+
 
 ### Congrats Page
 The congrats page presents a congrats message/animation to the user and shows the total number of moves alongside a 'play again'.
@@ -308,6 +310,10 @@ Rushda - I helped create the 'gameplay' section for the project, creating the in
 Khadijah -
 
 Hafsah -
-
+- Created pause/ settings menu
+- updated corresponding parts of the readme file
+- Created software development strategy
+- Created a goodbye page for when users quit the game.
+- 
 ## Success of Project
 Overall, the project successfully met all the set requirements, delivering a smooth, responsive, and user-friendly single-player game that runs directly in the browser without downloads. The interface is simple and intuitive, allowing users to start, restart, or quit the game easily via the settings menu, while accurate move and pair counters, clear feedback when matches are made, and an end message enhance gameplay clarity. The inclusion of accessible rules and responsive design ensures usability across desktop, tablet, and mobile devices. The game effectively caters to both user personas — providing the clarity and professionalism preferred by Persona 1 and the efficiency and interactivity valued by Persona 2. Although currently limited to single-player mode, the system performs reliably and achieves its intended purpose, making the project an overall success.
