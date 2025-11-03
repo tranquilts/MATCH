@@ -1,0 +1,69 @@
+
+
+/* ===========================
+   MATCH MENU SCREEN - FINALISED
+   =========================== */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  background: url('instructions.png') no-repeat center center fixed;
+  background-size: 100% 100%; /* fills whole screen */
+  background-color: #FFF7DD;
+  position: relative;
+}
+
+/* Full overlay layer for button boxes */
+.overlay {
+  position: absolute;
+  inset: 0;
+}
+
+/* ⚙️ Settings Icon Hitbox - overlay over icon */
+#settings-btn {
+  position: absolute;
+  top: 10.8vh;     /* perfectly vertical alignment */
+  right: 9.8vw;    /* nudged slightly left */
+  width: 5vw;
+  height: 5vw;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* ▶️ Play Now Button Hitbox - oval */
+#playBtn {
+  position: absolute;
+  bottom: 14.6vh;  /* raised to align perfectly */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18.5vw;   /* same width as the Play Now oval */
+  height: 5vw;     /* same height as oval shape */
+  background: transparent;
+  border: none;
+  border-radius: 3vw;
+  cursor: pointer;
+}
+
+/* Responsive layout for smaller laptops/tablets */
+@media (max-width: 900px) {
+  #settings-btn {
+    top: 9.5vh;
+    right: 7.8vw;
+    width: 7vw;
+    height: 7vw;
+  }
+
+  #playBtn {
+    bottom: 11.8vh;
+    width: 26vw;
+    height: 7vw;
+  }
+}

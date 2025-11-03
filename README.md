@@ -115,8 +115,8 @@ For each round, the game tracks the number of moves the player makes to match im
 ### **Match count**
 The game tracks each correct match while they play. 
 
-## **Pause Menu**
-The game loads up the pause menu when the pause icon is clicked, which includes 'Restart', 'Main Menu', and 'Quit Game'.
+## **Settings Menu**
+The game loads up the pause menu when the settings icon is clicked, which includes 'Restart', 'Main Menu', and 'Quit Game'.
   
 ### **Replay function**
 The replay function will be of use when the game has ended. This way the user will have a choice of whether or not they wish to continue the game and restart.
@@ -186,7 +186,7 @@ Elements:
 <img width="1000" height="750" alt="image" src="https://github.com/user-attachments/assets/168c7caf-0daf-442e-817e-77d22b8e2084" />
 
 
-### Pause Menu
+### Settings Menu
 
 Purpose:
 Allows users to decide their next move with the game. With options such as restart, main menu and quit. Quitting the game leads to a goodbye message. 
@@ -218,16 +218,25 @@ Elements:
 <img width="1000" height="750" alt="image" src="https://github.com/user-attachments/assets/8ecb117d-a915-4ab4-8889-cba231882ab6" />
 
 
-### Storyboards
+## Storyboards
 The project includes storyboards that documents the user experience and the user flow of the MATCH game.
 
-## Starting Page
+### Starting Page
 The starting page provides instructions on how to play, a menu to access functions and a play button to start playing.
 
 <img width="2500" height="1257" alt="Instructions Page Storyboard" src="https://github.com/user-attachments/assets/adad381e-9e81-4eb7-826c-6bb1e7a5fdb5" />
 
-## Flowcharts
+### Gameplay Page
+The gameplay page presents the MATCH game screen to the user in order to start playing the game, alongside displaying number of moves, correct pairs and a settings option.
 
+<img width="2500" height="1257" alt="image" src="https://github.com/user-attachments/assets/56cd1531-4282-4e18-9be6-bed21b7454be" />
+
+### Settings Page
+
+### Congrats Page
+The congrats page presents a congrats message/animation to the user and shows the total number of moves alongside a 'play again'.
+
+<img width="2500" height="1257" alt="image" src="https://github.com/user-attachments/assets/018af7a6-5ea0-41f7-b4e4-9ee085ef5586" />
 
 
 ## Risk Management
@@ -287,8 +296,18 @@ Collect and analyse user feedback via surveys. Update features if needed and reg
 |1.6|Number of pairs tracking|Make correct matches one by one|Pair counter increases by one for each successful match and displays total correctly|Pair counter increases by one for each successful match and displays total correctly <img width="948" height="415" alt="Screenshot 2025-11-01 144607" src="https://github.com/user-attachments/assets/86aadafc-ca6d-40a3-8fbc-83ca2b6c3081" />|n/a|
 |1.7|Double-click same card|Click the same card twice|System ignores second click; no error or crash occurs|System ignores second click; no error or crash occurs|n/a|
 |1.8|Settings menu opens|Click on the Settings icon/button|Settings menu loads successfully, displaying available options| | |
-|1.9|Restart from Settings menu|In Settings, click Restart Game|Game board resets and starts a new round immediately| Restart button works as expected |
-|1.10|Main Menu from Settings|In Settings, click Main Menu|Initial home screen or main menu loads| Main menu button works as expected | |
-|1.11|Quit Game option|In Settings, click Quit Game|Game session closes and user exits game (or returns to exit confirmation screen)| Quit button works as expected | |
+|1.9|Restart from Settings menu|In Settings, click Restart Game|Game board resets and starts a new round immediately| Restart button works as expected |n/a|
+|1.10|Main Menu from Settings|In Settings, click Main Menu|Initial home screen or main menu loads| Main menu button works as expected |n/a|
+|1.11|Quit Game option|In Settings, click Quit Game|Game session closes and user exits game (or returns to exit confirmation screen)| Quit button works as expected |n/a|
+|1.12|Complete all matches|Match all pairs successfully|“You Win!” screen is loaded with number of moves displayed|“You Win!” screen is loaded with number of moves displayed <img width="948" height="415" alt="Screenshot 2025-11-01 215550" src="https://github.com/user-attachments/assets/41e1e447-3ba8-4250-a512-2bbc1785cda7" />|n/a|
 
-|1.13|Complete all matches|Match all pairs successfully|“You Win!” screen is loaded with number of moves displayed|“You Win!” screen is loaded with number of moves displayed <img width="948" height="415" alt="Screenshot 2025-11-01 215550" src="https://github.com/user-attachments/assets/41e1e447-3ba8-4250-a512-2bbc1785cda7" />|n/a|
+
+## Individual Contributions
+Rushda - I helped create the 'gameplay' section for the project, creating the initial wireframe and then coding a 4x4 grid of green tiles. When the user clicks on the tile, it flips around and presents the image. Thereafter, the user must find the matching tiles. Alongside this, I added the 'Number of Moves' element as well as 'Number of Pairs' where the user can see how many moves they've made and how many pairs they've made/have left. I further created the congrats page, where the user is presented with the 'Congrats' message and is presented their total number of moves along with an option to play again, where they are bought back to the gameplay screen.
+
+Khadijah -
+
+Hafsah -
+
+## Success of Project
+Overall, the project successfully met all the set requirements, delivering a smooth, responsive, and user-friendly single-player game that runs directly in the browser without downloads. The interface is simple and intuitive, allowing users to start, restart, or quit the game easily via the settings menu, while accurate move and pair counters, clear feedback when matches are made, and an end message enhance gameplay clarity. The inclusion of accessible rules and responsive design ensures usability across desktop, tablet, and mobile devices. The game effectively caters to both user personas — providing the clarity and professionalism preferred by Persona 1 and the efficiency and interactivity valued by Persona 2. Although currently limited to single-player mode, the system performs reliably and achieves its intended purpose, making the project an overall success.
