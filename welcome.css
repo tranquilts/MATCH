@@ -1,58 +1,52 @@
-/* Full background: wireframe */
 body {
   margin: 0;
+  padding: 0;
   height: 100vh;
-  background: url('https://github.com/user-attachments/assets/663bc4eb-a49b-4244-8d39-d29420df0edf')
-              no-repeat center center;
-  background-size: contain;
-  background-color: #91C1C4; /* outer border color */
+  width: 100vw;
+  background: url('instructions.png') no-repeat center center;
+  background-size: cover;
   font-family: 'Itim', sans-serif;
+  overflow: hidden;
 }
 
-/* Overlay to hold interactive buttons */
 .overlay {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-/* Settings icon styling */
 #settings-btn {
   position: absolute;
-  top: 55px;
-  right: 85px;
+  top: 5%;
+  right: 5%;
   background: transparent;
   border: none;
   cursor: pointer;
-  transition: transform 0.2s ease;
 }
 
 #settings-btn img {
   width: 65px;
   height: 65px;
+  transition: 0.3s;
 }
 
-#settings-btn:hover {
-  transform: scale(1.05) rotate(15deg);
-}
-
-/* Play Now button styling */
 #playBtn {
   position: absolute;
-  bottom: 135px;
+  bottom: 12%;
   left: 50%;
   transform: translateX(-50%);
   background: transparent;
   border: none;
   cursor: pointer;
-  transition: transform 0.2s ease;
 }
 
 #playBtn img {
-  width: 240px;
+  width: 250px;
   height: auto;
+  transition: 0.3s;
 }
 
-#playBtn:hover {
-  transform: translateX(-50%) scale(1.05);
-}
+#playBtn:hover img,
+#settings-btn:hover img {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 12px rgba(128, 161, 186, 0.7));
