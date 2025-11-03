@@ -1,77 +1,76 @@
-/* === General Page Layout === */
+/* ========== GENERAL PAGE ========== */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #FFF7DD; /* cream background */
-  border: 15px solid #91C1C4; /* blue border */
+  background-color: #FFF7DD; /* Light cream */
+  border: 15px solid #91C1C4; /* Teal border */
   box-sizing: border-box;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  text-align: center;
-  font-family: 'Itim', cursive;
   position: relative;
 }
 
-/* === Settings Icon === */
+/* ========== SETTINGS ICON ========== */
 #settings-btn {
   position: absolute;
-  top: 35px;
-  right: 45px;
-  width: 45px;
-  height: 45px;
+  top: 40px;
+  right: 50px;
+  width: 55px;
+  height: 55px;
   cursor: pointer;
   filter: hue-rotate(165deg) brightness(0.9);
   transition: transform 0.3s ease;
 }
-
 #settings-btn:hover {
-  transform: rotate(20deg) scale(1.1);
+  transform: rotate(20deg) scale(1.05);
 }
 
-/* === Title === */
+/* ========== TITLES ========== */
 h1 {
   font-family: 'Jacques Francois Shadow', serif;
-  color: #80A1BA;
   font-size: 5rem;
-  letter-spacing: 3px;
+  color: #80A1BA;
   margin-top: 60px;
   margin-bottom: 10px;
+  letter-spacing: 4px;
 }
 
-/* === Subtitle === */
 h2 {
-  color: #000;
+  font-family: 'Itim', cursive;
   font-size: 1.6rem;
-  margin-bottom: 15px;
+  color: #000;
+  margin-bottom: 20px;
 }
 
-/* === Instructions === */
+/* ========== INSTRUCTIONS (no border, Itim font) ========== */
 ol {
   list-style-position: inside;
-  font-size: 1.1rem;
+  font-family: 'Itim', cursive;
+  font-size: 1.2rem;
   color: #000;
-  font-weight: bold;
-  line-height: 1.8;
-  margin: 0 auto 50px;
+  font-weight: normal;
+  line-height: 1.9;
+  margin: 0 auto 60px;
   padding: 0;
-  max-width: 600px;
+  text-align: center;
 }
 
-/* === Play Button === */
+/* ========== PLAY BUTTON ========== */
 #playBtn {
-  width: 200px;
-  padding: 12px 0;
+  font-family: 'Itim', cursive;
   font-size: 1.3rem;
-  background-color: #80A1BA;
+  background-color: #80A1BA; /* Blue shade */
+  color: #FFF;
   border: none;
   border-radius: 30px;
-  color: white;
+  width: 200px;
+  height: 55px;
   cursor: pointer;
-  font-family: 'Itim', cursive;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
