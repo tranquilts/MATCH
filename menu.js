@@ -1,16 +1,9 @@
-// Main menu buttons
-const playBtn = document.getElementById("start-game-btn");
-const settingsBtn = document.getElementById("settings-button");
-
-// Direct to gameplay page 
-playBtn.addEventListener("click", () => {
+// Play button goes to gameplay page
+document.getElementById("play-btn").addEventListener("click", () => {
     window.location.href = "gameplay.html";
 });
 
-// Direct to settings page 
-settingsBtn.addEventListener("click", () => {
+// Settings icon goes to settings page
+document.getElementById("settings-button").addEventListener("click", () => {
     window.location.href = "settings_menu.html";
 });
-
-
-
