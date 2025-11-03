@@ -1,52 +1,50 @@
-body {
+/* Full-page setup */
+html, body {
   margin: 0;
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background: url('instructions.png') no-repeat center center;
+  border: 15px solid #91C1C4;
+  background: url("instructions.png") no-repeat center center;
   background-size: cover;
-  font-family: 'Itim', sans-serif;
   overflow: hidden;
 }
 
+/* Container for clickable buttons */
 .overlay {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-#settings-btn {
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-#settings-btn img {
-  width: 65px;
-  height: 65px;
-  transition: 0.3s;
-}
-
+/* Invisible buttons */
+#settings-btn,
 #playBtn {
   position: absolute;
-  bottom: 12%;
-  left: 50%;
-  transform: translateX(-50%);
   background: transparent;
   border: none;
   cursor: pointer;
 }
 
-#playBtn img {
-  width: 250px;
-  height: auto;
-  transition: 0.3s;
+/* 🛠 Settings icon (top right) */
+#settings-btn {
+  top: 4%;
+  right: 4%;
+  width: 6%;
+  height: 10%;
 }
 
-#playBtn:hover img,
-#settings-btn:hover img {
-  transform: scale(1.05);
-  filter: drop-shadow(0 0 12px rgba(128, 161, 186, 0.7));
+/* ▶️ Play button (bottom center) */
+#playBtn {
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 9%;
+}
+
+/* Optional hover border for testing */
+#settings-btn:hover,
+#playBtn:hover {
+  outline: 3px solid rgba(128, 161, 186, 0.3);
+  }
