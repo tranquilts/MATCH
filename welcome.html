@@ -4,28 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MATCH – Start Page</title>
-
-  <!-- Link CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- Overlay contains invisible clickable zones -->
   <div class="overlay">
     <button id="settings-btn" aria-label="Settings"></button>
     <button id="playBtn" aria-label="Play Now"></button>
   </div>
 
-  <!-- JS Link -->
-  <script>
-    // JavaScript to handle button clicks
-    document.getElementById("playBtn").addEventListener("click", () => {
-      window.location.href = "gameplay.html";
-    });
-
-    document.getElementById("settings-btn").addEventListener("click", () => {
-      window.location.href = "settings_menu.html";
-    });
-  </script>
+  <script src="menu.js"></script>
 </body>
 </html>
