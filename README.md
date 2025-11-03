@@ -232,7 +232,12 @@ The gameplay page presents the MATCH game screen to the user in order to start p
 <img width="2500" height="1257" alt="image" src="https://github.com/user-attachments/assets/56cd1531-4282-4e18-9be6-bed21b7454be" />
 
 ### Settings Page
+
 ### Congrats Page
+The congrats page presents a congrats message/animation to the user and shows the total number of moves alongside a 'play again'.
+
+<img width="2500" height="1257" alt="image" src="https://github.com/user-attachments/assets/018af7a6-5ea0-41f7-b4e4-9ee085ef5586" />
+
 
 ## Flowcharts
 
