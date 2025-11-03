@@ -1,139 +1,58 @@
-/* ===== GENERAL PAGE LAYOUT ===== */
-html, body {
-  height: 100%;
+/* Full background: wireframe */
+body {
   margin: 0;
-  padding: 0;
-  background-color: #FFF7DD; /* cream */
-  border: 15px solid #91C1C4; /* teal frame */
-  box-sizing: border-box;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative;
-  overflow: hidden;
+  height: 100vh;
+  background: url('https://github.com/user-attachments/assets/663bc4eb-a49b-4244-8d39-d29420df0edf')
+              no-repeat center center;
+  background-size: contain;
+  background-color: #91C1C4; /* outer border color */
+  font-family: 'Itim', sans-serif;
 }
 
-/* ===== SETTINGS ICON ===== */
+/* Overlay to hold interactive buttons */
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Settings icon styling */
 #settings-btn {
   position: absolute;
-  top: 35px;
-  right: 50px;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  background: none;
+  top: 55px;
+  right: 85px;
+  background: transparent;
   border: none;
-  filter: hue-rotate(165deg) brightness(0.9);
-  transition: transform 0.3s ease;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
+
+#settings-btn img {
+  width: 65px;
+  height: 65px;
+}
+
 #settings-btn:hover {
-  transform: rotate(20deg) scale(1.05);
+  transform: scale(1.05) rotate(15deg);
 }
 
-/* ===== TITLES ===== */
-h1 {
-  font-family: 'Jacques Francois Shadow', serif;
-  font-size: 5rem;
-  color: #80A1BA;
-  margin-top: 70px;
-  margin-bottom: 15px;
-  letter-spacing: 4px;
-}
-
-h2 {
-  font-family: 'Itim', sans-serif;
-  font-size: 1.7rem;
-  font-weight: 500;
-  color: #000;
-  margin-bottom: 35px;
-}
-
-/* ===== INSTRUCTION LIST ===== */
-ol {
-  list-style-position: inside;
-  font-family: 'Itim', sans-serif;
-  font-size: 1.35rem;
-  font-weight: 400;
-  color: #000;
-  line-height: 2;
-  letter-spacing: 0.4px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0;
-  max-width: 600px;
-  border: none;
-}
-ol li:last-child {
-  margin-bottom: 60px;
-}
-
-/* ===== PLAY BUTTON ===== */
+/* Play Now button styling */
 #playBtn {
-  font-family: 'Itim', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 500;
-  background-color: #91AFC4;
-  color: #FFFFFF;
+  position: absolute;
+  bottom: 135px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
   border: none;
-  border-radius: 30px;
-  width: 190px;
-  height: 52px;
   cursor: pointer;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 100px;
+  transition: transform 0.2s ease;
 }
-.play-icon {
-  font-size: 1.1rem;
-  color: #FFFFFF;
-  transform: translateY(1px);
+
+#playBtn img {
+  width: 240px;
+  height: auto;
 }
+
 #playBtn:hover {
-  background-color: #A9C4D7;
-  transform: translateY(-2px);
-}
-
-/* ===== SETTINGS PAGE BUTTONS ===== */
-.settings-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  margin-top: 150px;
-}
-.settings-container button {
-  font-family: 'Itim', sans-serif;
-  font-size: 1.2rem;
-  background-color: #91AFC4;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 10px 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.settings-container button:hover {
-  background-color: #A9C4D7;
-}
-
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 1024px) {
-  h1 { font-size: 3.5rem; margin-top: 50px; }
-  h2 { font-size: 1.4rem; margin-bottom: 25px; }
-  ol { font-size: 1.1rem; line-height: 1.8; max-width: 90%; }
-  #playBtn { width: 160px; height: 46px; font-size: 1.1rem; margin-bottom: 60px; }
-  #settings-btn { width: 40px; height: 40px; top: 25px; right: 35px; }
-}
-@media (max-width: 600px) {
-  h1 { font-size: 3rem; margin-top: 40px; }
-  h2 { font-size: 1.3rem; }
-  ol { font-size: 1rem; line-height: 1.7; }
-  #playBtn { width: 150px; height: 44px; font-size: 1rem; }
-  #settings-btn { width: 35px; height: 35px; top: 20px; right: 30px; }
+  transform: translateX(-50%) scale(1.05);
 }
