@@ -5,32 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MATCH</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Itim&display=swap" rel="stylesheet">
+  <!-- 🎨 Fonts (loaded separately) -->
+  <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
-  <!-- CSS + JS -->
+  <!-- 🎨 CSS + JS -->
   <link rel="stylesheet" href="menu.css">
   <script src="menu.js" defer></script>
 </head>
 
 <body>
-  <div class="border-wrapper">
-    <header>
-      <h1>MATCH</h1>
-      <button id="settings-btn" aria-label="Settings">⚙️</button>
-    </header>
+  <!-- ⚙️ Settings icon image -->
+  <div class="settings-icon">
+    <img src="settings-icon.png" alt="Settings Icon" id="settings-btn">
+  </div>
 
-    <main>
-      <h2>How To Play</h2>
-      <ol>
-        <li>Click a card to reveal an image.</li>
-        <li>Click another to find its match.</li>
-        <li>Matches stay up; mismatches flip back.</li>
-        <li>Match all cards to win!</li>
-        <li>Use the menu to pause, restart and quit.</li>
-      </ol>
-      <button id="playBtn">▶ Play Now</button>
-    </main>
+  <!-- 🏷 Title -->
+  <h1>MATCH</h1>
+  <h2>How To Play</h2>
+
+  <!-- 📘 Instructions box -->
+  <div class="game-container">
+    <p>1. Click a card to reveal an image.</p>
+    <p>2. Click another to find its match.</p>
+    <p>3. Matches stay up; mismatches flip back.</p>
+    <p>4. Match all cards to win!</p>
+    <p>5. Use the menu to pause, restart, and quit.</p>
+
+    <!-- ▶️ Play button -->
+    <div class="button-container">
+      <button id="playBtn" class="menu-button">▶ Play Now</button>
+    </div>
   </div>
 </body>
 </html>
