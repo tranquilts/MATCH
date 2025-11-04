@@ -5,27 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MATCH</title>
 
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Itim&display=swap" rel="stylesheet">
+
+  <!-- CSS + JS -->
   <link rel="stylesheet" href="menu.css">
   <script src="menu.js" defer></script>
 </head>
 
 <body>
-  <div class="background">
-    <img src="instructions.png" alt=MATCH Instructions Page">
-  </div>
-  
-  <div class="overlay">
-    <button id="settings-btn" aria-label="Settings"></button>
-    <button id="playBtn" aria-label="Play Now"></button>
+  <div class="border-wrapper">
+    <header>
+      <h1>MATCH</h1>
+      <button id="settings-btn" aria-label="Settings">⚙️</button>
+    </header>
+
+    <main>
+      <h2>How To Play</h2>
+      <ol>
+        <li>Click a card to reveal an image.</li>
+        <li>Click another to find its match.</li>
+        <li>Matches stay up; mismatches flip back.</li>
+        <li>Match all cards to win!</li>
+        <li>Use the menu to pause, restart and quit.</li>
+      </ol>
+      <button id="playBtn">▶ Play Now</button>
+    </main>
   </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
