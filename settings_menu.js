@@ -2,14 +2,20 @@
 
 function goToMainMenu(){
     window.location.href = "./menu.html"; // goes to main menu page
+} catch (error) {
+    alert("Couldn't open menu.html - make sure it's in the same folder!"); // error message
 }
 
 function resetGame(){
     window.location.href = "gameplay.html"; // restarts the game
+    catch (error) {
+    alert("Couldn't open menu.html - make sure it's in the same folder!"); // error message
 }
 
 function quitGame(){
     window.location.href = "goodbye.html"; // goes to goodbye page
+    catch (error) {
+    alert("Couldn't open menu.html - make sure it's in the same folder!"); // error message
 }
 
 
