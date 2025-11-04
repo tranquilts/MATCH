@@ -1,14 +1,14 @@
 
 function goToMainMenu(){
-    window.location.href = "./menu.html"; // goes to main menu page
+    window.location.href = "menu.html"; // goes to main menu page
 
 
 function resetGame(){
-    window.location.href = "./gameplay.html"; // restarts the game
+    window.location.href = "gameplay.html"; // restarts the game
 
 
 function quitGame(){
-    window.location.href = "./goodbye.html"; // goes to goodbye page
+    window.location.href = "goodbye.html"; // goes to goodbye page
 
 
 
