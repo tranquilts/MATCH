@@ -289,11 +289,8 @@ Collect and analyse user feedback via surveys. Update features if needed and reg
 
 | Test No. | Test Description | Action | Expected Outcome | Actual Outcome | Further Actions |
 |----------|------------------|--------------|------------------|----------------|---------|
-|1.1|Launch the game website|Open game URL in browser|Homepage loads successfully with visible 'Start Game' screen|<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/2a58e9fe-3e1e-4cb5-8abd-dbeba3611b42" />
- |n/a |
-|1.2|Start a new game|Click on 'Start Game' button|Game board appears with all word tiles displayed|<<img width="1920" height="1020" alt="Screenshot 2025-11-04 020556" src="https://github.com/user-attachments/assets/9ee348ab-340c-4fd1-97fc-1c38d2b27b60" />
- />
- |n/a |
+|1.1|Launch the game website|Open game URL in browser|Homepage loads successfully with visible 'Start Game' screen|<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/2a58e9fe-3e1e-4cb5-8abd-dbeba3611b42" />|n/a|
+|1.2|Start a new game|Click on 'Start Game' button|Game board appears with all word tiles displayed|<<img width="1920" height="1020" alt="Screenshot 2025-11-04 020556" src="https://github.com/user-attachments/assets/9ee348ab-340c-4fd1-97fc-1c38d2b27b60" />|n/a|
 |1.3|Select two matching cards|Click on two matching tiles|Both tiles remain revealed when a matching pair is clicked on and colour change is made|Both tiles remain revealed and colour change is made, however, 2 images of the same theme were being 'matched' <img width="948" height="415" alt="Screenshot (1)" src="https://github.com/user-attachments/assets/144d85e4-4a3a-4a93-88ac-8c6d7b7fb688" />|Change the labelling of the classes for each image in order for correct 'match' logic.|
 |1.3 (Retest)|Select two matching cards|Click on two matching tiles|Both tiles remain revealed when a matching pair is clicked on and colour change is made|Both tiles remain revealed when a matching pair is clicked on and colour change is made <img width="948" height="415" alt="image" src="https://github.com/user-attachments/assets/0f1f93f7-0ab8-4891-8cef-ed9736214541" />|n/a|
 |1.4|Select two non-matching cards|Click on two different tiles|Tiles flip back after a short delay|Tiles flip back after a short delay|n/a|
