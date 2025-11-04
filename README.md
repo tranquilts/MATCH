@@ -300,8 +300,7 @@ Collect and analyse user feedback via surveys. Update features if needed and reg
 |1.8|Settings menu opens|Click on the Settings icon/button|Settings menu loads successfully, displaying available options|Settings menu loads successfully, displaying available options <img width="947" height="419" alt="image" src="https://github.com/user-attachments/assets/5dc3aa9d-0576-4aa3-bf25-014782898f04" />|n/a|
 |1.9|Restart from Settings menu|In Settings, click Restart Game|Game board resets and starts a new round immediately| Restart button works as expected |n/a|
 |1.10|Main Menu from Settings|In Settings, click Main Menu|Initial home screen or main menu loads| Main menu returns blank page| Error handling attempted with no success|
-|1.11|Quit Game option|In Settings, click Quit Game|Game session closes and user exits game (or returns to exit confirmation screen)| <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/334466e5-687c-4982-85fe-20852b7e479c" />
- |n/a|
+|1.11|Quit Game option|In Settings, click Quit Game|Game session closes and user exits game (or returns to exit confirmation screen)| <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/334466e5-687c-4982-85fe-20852b7e479c" />|n/a|
 |1.12|Complete all matches|Match all pairs successfully|“You Win!” screen is loaded with number of moves displayed|“You Win!” screen is loaded with number of moves displayed <img width="948" height="415" alt="Screenshot 2025-11-01 215550" src="https://github.com/user-attachments/assets/41e1e447-3ba8-4250-a512-2bbc1785cda7" />|n/a|
 
 
