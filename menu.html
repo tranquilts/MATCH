@@ -87,6 +87,7 @@
       cursor: pointer;
       margin-top: 25px; /* spacing from last line */
       transition: transform 0.2s, background-color 0.2s;
+      font-family: 'Jacques Francois Shadow', serif;
       font-family: 'Itim', sans-serif;
     }
 
@@ -100,8 +101,23 @@
       transform: translateY(1px) scale(0.98);
     }
 
-    
+    /* adapts to smaller devices */
+    @media (max-width: 900px) {
+      h1 {
+        font-size: 3.5rem;
+      }
 
+      .menu-button {
+        width: 60%;
+        font-size: 18px;
+      }
+
+      .settings-icon {
+        top: 65px;
+        right: 60px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -136,7 +152,11 @@
       window.location.href = "settings_menu.html";
     });
 
- 
+    // 🔁 Allow instant reload when redirected back
+    window.addEventListener("pageshow", (event) => {
+      if (event.persisted) {
+        window.location.reload();
+      }
     });
   </script>
 </body>
