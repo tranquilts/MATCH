@@ -24,21 +24,21 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      font-family: 'Itim', sans-serif;
       box-sizing: border-box;
+      font-family: 'Itim', sans-serif;
       position: relative;
     }
 
     /* ⚙️ Settings Icon */
     .settings-icon {
       position: absolute;
-      top: 90px;
-      right: 120px;
+      top: 85px;
+      right: 100px;
     }
 
     .settings-icon img {
-      width: 60px;
-      height: 60px;
+      width: 55px;
+      height: 55px;
       cursor: pointer;
       transition: transform 0.2s ease;
     }
@@ -47,76 +47,91 @@
       transform: scale(1.1);
     }
 
-    /* 🎯 Title */
+    /* Title */
     h1 {
       font-family: 'Jacques Francois Shadow', serif;
       font-size: 5rem;
       color: #80A1BA;
-      margin-top: 70px;
-      margin-bottom: 5px;
+      margin-top: 60px;
+      margin-bottom: 0;
     }
 
-    /* 📝 Subtitle */
+    /* Subtitle */
     h2 {
       font-family: 'Jacques Francois Shadow', serif;
-      font-size: 2rem;
-      color: #000;
-      margin-top: 0;
-      margin-bottom: 20px;
+      color: black;
+      font-size: 1.8rem;
+      margin: 10px 0 25px 0;
     }
 
-    /* 📦 Instructions box */
+    /* Instructions Box */
     .game-container {
       background-color: #E8DFCA;
       border: 1px solid #80A1BA;
       border-radius: 10px;
       width: 520px;
-      height: 340px;
-      padding: 15px 25px;
+      padding: 25px;
       box-shadow: 0 5px 10px rgba(0,0,0,0.15);
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
     }
 
+    /* Instruction text */
     p {
-      font-size: 20px;
-      color: #000;
-      margin: 6px 0;
-      line-height: 1.5em;
       font-family: 'Itim', sans-serif;
-      text-align: left;
-      width: 100%;
-      max-width: 420px;
+      font-size: 20px;
+      color: black;
+      margin: 8px 0;
+      line-height: 1.4em;
     }
 
-    /* ▶️ Play Now button */
+    /* ▶ Play Now Button */
     .menu-button {
-      position: absolute;
-      bottom: 100px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 250px;
-      height: 60px;
-      border: none;
-      border-radius: 50px;
+      width: 220px;
+      padding: 14px 0;
+      font-size: 22px;
       background-color: #91C4C3;
       color: white;
-      font-size: 1.3rem;
-      font-family: 'Jacques Francois Shadow', serif;
+      border: none;
+      border-radius: 50px;
       cursor: pointer;
+      margin-top: 25px; /* spacing from last line */
       transition: transform 0.2s, background-color 0.2s;
+      font-family: 'Jacques Francois Shadow', serif;
     }
 
     .menu-button:hover {
       background-color: #b8d4e3;
-      transform: translateX(-50%) translateY(-3px);
+      transform: translateY(-3px);
     }
 
     .menu-button:active {
       background-color: #9bbdd2;
-      transform: translateX(-50%) translateY(1px) scale(0.98);
+      transform: translateY(1px) scale(0.98);
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      .game-container {
+        width: 85%;
+        padding: 20px;
+      }
+
+      .menu-button {
+        width: 60%;
+        font-size: 18px;
+      }
+
+      .settings-icon {
+        top: 65px;
+        right: 60px;
+      }
     }
   </style>
 </head>
@@ -127,31 +142,38 @@
     <img src="settings-icon.png" alt="Settings Icon" id="settings-btn">
   </div>
 
-  <!-- 🎯 Title -->
+  <!-- Title and Subtitle -->
   <h1>MATCH</h1>
   <h2>How To Play</h2>
 
-  <!-- 📜 Instructions -->
+  <!-- Instructions -->
   <div class="game-container">
     <p>1. Click a card to reveal an image.</p>
     <p>2. Click another to find its match.</p>
     <p>3. Matches stay up; mismatches flip back.</p>
     <p>4. Match all cards to win!</p>
-    <p>5. Use the menu to pause, restart, and quit.</p>
+    <p>5. Use the menu to pause, restart and quit.</p>
+
+    <!-- ▶ Play Now -->
+    <button id="playBtn" class="menu-button">▶ Play Now</button>
   </div>
 
-  <!-- ▶️ Play Button -->
-  <button id="playBtn" class="menu-button">▶ Play Now</button>
-
   <script>
-    // ▶️ Play Now → Gameplay page
+    // 🎮 Go to gameplay page
     document.getElementById("playBtn").addEventListener("click", () => {
       window.location.href = "gameplay.html";
     });
 
-    // ⚙️ Settings → Settings Menu
+    // ⚙️ Go to settings page
     document.getElementById("settings-btn").addEventListener("click", () => {
       window.location.href = "settings_menu.html";
+    });
+
+    // 🔁 Allow instant reload when redirected back
+    window.addEventListener("pageshow", (event) => {
+      if (event.persisted) {
+        window.location.reload();
+      }
     });
   </script>
 </body>
