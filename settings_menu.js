@@ -1,7 +1,7 @@
 
 
 function goToMainMenu(){
-    window.location.replace = "menu.html"; // goes to main menu page
+    window.location.replace = ("menu.html"); // goes to main menu page
 }
 
 function resetGame(){
