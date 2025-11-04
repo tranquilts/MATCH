@@ -1,132 +1,120 @@
-/* ===========================
-   MATCH MENU SCREEN 
-   =========================== */
-
+/* Apply full-page border */
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  background-color: #FFF7DD;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
+    background-color: #FFF7DD;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-  border: 15px solid #91C1C4;
-  box-sizing: border-box;
-  position: relative;
+    /* Border around the whole page */
+    border: 15px solid #91C1C4;
+    box-sizing: border-box; /* ensures border doesn't cause scrollbars */
 }
 
-/* ⚙️ Settings icon */
-.settings-icon {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-}
-
-.settings-icon img {
-  width: 55px;
-  height: 55px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.settings-icon img:hover {
-  transform: scale(1.1);
-}
-
-/* 🏷 Title */
 h1 {
-  font-family: 'Jacques Francois Shadow', serif;
-  color: #80A1BA;
-  font-size: 5rem;
-  text-align: center;
-  margin-top: 70px;
-  margin-bottom: 10px;
+    font-family: 'Jacques Francois Shadow', serif;
+    color: #80A1BA;
+    font-size: 5rem;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-/* Subtitle */
 h2 {
-  font-family: 'Jacques Francois Shadow', serif;
-  font-size: 2.3rem;
-  color: #4A6C6F;
-  margin: 10px 0 25px 0;
+    font-family: 'Jacques Francois Shadow', serif;
+    font-size: 36px;
+    color: #4A6C6F;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-/* 📘 Main instructions box */
+/* Game container box */
 .game-container {
-  background-color: #E8DFCA;
-  border: 1px solid #80A1BA;
-  border-radius: 12px;
-  width: 520px;
-  padding: 30px 25px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
-  margin-top: 15px;
+    position: relative;
+    background-color: #E8DFCA;
+    border: 1px solid #80A1BA;
+    border-radius: 10px;
+    width: 500px;
+    height: 390px;
+    top: 10px;
+    left: auto;
+    transform: none;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional soft shadow */
 }
 
-/* 📝 Instructions text */
-p {
-  font-family: 'Itim', sans-serif;
-  font-size: 22px;
-  color: #C74C00;
-  line-height: 1.5em;
-  margin: 10px 0;
+/* Back button styling */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #91C4C3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: transform 0.2s, background-color 0.2s;
+    cursor: pointer;
 }
 
-/* ▶️ Button container */
-.button-container {
-  margin-top: 28px;
-  display: flex;
-  justify-content: center;
-}
-
-/* ▶️ Play Now button */
 .menu-button {
-  width: 220px;
-  padding: 14px 0;
-  font-size: 1.3rem;
-  background-color: #91C4C3;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  transition: transform 0.2s, background-color 0.2s;
-  cursor: pointer;
-  font-family: 'Jacques Francois Shadow', serif;
+    width: 200px;
+    padding: 12px 0;
+    font-size: 18px;
+    background-color: #91C4C3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s, background-color 0.2s;
+    cursor: pointer;
 }
 
+/* Hover effect */
 .menu-button:hover {
-  background-color: #b8d4e3;
+  background-color: #b8d4e3;         /* hover color */
   transform: translateY(-3px);
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
+/* Click (active) effect */
 .menu-button:active {
-  background-color: #9bbdd2;
+  background-color: #9bbdd2;         /* click color */
   transform: translateY(1px) scale(0.98);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* 📱 Responsive layout */
-@media (max-width: 900px) {
-  h1 {
-    font-size: 3.5rem;
-  }
+/* Optional focus style (keyboard navigation) */
+.menu-button:focus {
+  outline: 3px solid rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+}
 
-  .game-container {
-    width: 80%;
-    padding: 20px;
-  }
+.button-container {
+    margin-top:18px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    height: 260px;
+}
 
-  .menu-button {
-    width: 60%;
-  }
-
-  .settings-icon img {
-    width: 45px;
-    height: 45px;
-  }
+p{
+    font-family: rochester, cursive;
+    font-size: 30px;
+    color: #C74C00;
 }
