@@ -1,5 +1,5 @@
 /* ===========================
-   MATCH MENU SCREEN (FINAL, FIXED)
+   MATCH MENU SCREEN - FIXED VERSION
    =========================== */
 
 html, body {
@@ -14,23 +14,25 @@ html, body {
   position: relative;
 }
 
-/* 🎨 Wireframe background with fallback for all extensions */
-body {
-  background: 
-    url("instructions.PNG") no-repeat center center fixed,
-    url("instructions.png") no-repeat center center fixed,
-    url("instructions.jpg") no-repeat center center fixed;
-  background-size: contain;
+/* 🖼 Image behaves like background but is HTML-based */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* ensures full image visible */
+  z-index: 0; /* behind everything else */
 }
 
-/* Transparent overlay for clickable buttons */
+/* Overlay for clickable buttons */
 .overlay {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 1; /* keeps buttons on top of image */
 }
 
-/* ⚙️ Settings button (top-right) */
+/* ⚙️ Settings button (top-right icon area) */
 #settings-btn {
   position: absolute;
   top: 10.8vh;
@@ -43,7 +45,7 @@ body {
   border-radius: 50%;
 }
 
-/* ▶️ Play Now button (bottom-center) */
+/* ▶️ Play Now button (bottom oval) */
 #playBtn {
   position: absolute;
   bottom: 14.6vh;
@@ -57,13 +59,12 @@ body {
   cursor: pointer;
 }
 
-/* Hover highlight for debugging */
-#settings-btn:hover,
-#playBtn:hover {
-  outline: 2px solid rgba(128, 161, 186, 0.5);
+/* 🧩 Hover outline (testing only) */
+#playBtn:hover, #settings-btn:hover {
+  outline: 3px solid rgba(128, 161, 186, 0.5);
 }
 
-/* Responsive adjustments */
+/* 📱 Responsive layout */
 @media (max-width: 900px) {
   #settings-btn {
     top: 9.5vh;
