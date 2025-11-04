@@ -5,43 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MATCH</title>
 
-  <!-- 🎨 Google Fonts -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
-  <!-- 🎨 Embedded CSS -->
   <style>
     html, body {
       height: 100%;
       margin: 0;
       padding: 0;
+      overflow: hidden;
     }
 
     body {
       background-color: #FFF7DD;
       border: 15px solid #91C1C4;
-      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
       text-align: center;
       font-family: 'Itim', sans-serif;
-      overflow: hidden;
+      box-sizing: border-box;
       position: relative;
     }
 
-    /* ⚙️ Settings icon — top-right corner */
+    /* ⚙️ Settings Icon */
     .settings-icon {
       position: absolute;
-      top: 9.8vh;  /* aligns vertically */
-      right: 9.5vw; /* slightly inset from border */
+      top: 90px;
+      right: 120px;
     }
 
     .settings-icon img {
-      width: 5vw;
-      aspect-ratio: 1/1;
+      width: 60px;
+      height: 60px;
       cursor: pointer;
       transition: transform 0.2s ease;
     }
@@ -50,119 +47,91 @@
       transform: scale(1.1);
     }
 
-    /* 🏷 Title */
+    /* 🎯 Title */
     h1 {
       font-family: 'Jacques Francois Shadow', serif;
+      font-size: 5rem;
       color: #80A1BA;
-      font-size: 4.7rem;
-      margin-top: 8vh;
-      margin-bottom: 0.3em;
+      margin-top: 70px;
+      margin-bottom: 5px;
     }
 
-    /* Subtitle */
+    /* 📝 Subtitle */
     h2 {
       font-family: 'Jacques Francois Shadow', serif;
       font-size: 2rem;
-      color: #4A6C6F;
-      margin-bottom: 0.8em;
+      color: #000;
+      margin-top: 0;
+      margin-bottom: 20px;
     }
 
-    /* 📘 Instructions container */
+    /* 📦 Instructions box */
     .game-container {
       background-color: #E8DFCA;
       border: 1px solid #80A1BA;
       border-radius: 10px;
-      width: 460px;
-      padding: 18px 25px;
-      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
-      margin-top: 0;
+      width: 520px;
+      height: 340px;
+      padding: 15px 25px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
-    /* 📝 Instructions text */
     p {
-      font-family: 'Itim', sans-serif;
-      font-size: 21px;
-      color: #C74C00;
+      font-size: 20px;
+      color: #000;
       margin: 6px 0;
-      line-height: 1.45em;
-    }
-
-    /* ▶️ Button container */
-    .button-container {
-      position: absolute;
-      bottom: 14.5vh; /* aligns Play Now button perfectly */
-      left: 50%;
-      transform: translateX(-50%);
+      line-height: 1.5em;
+      font-family: 'Itim', sans-serif;
+      text-align: left;
+      width: 100%;
+      max-width: 420px;
     }
 
     /* ▶️ Play Now button */
     .menu-button {
-      width: 18.5vw;
-      aspect-ratio: 3.4/1;
-      background-color: #91C4C3;
+      position: absolute;
+      bottom: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 250px;
+      height: 60px;
       border: none;
       border-radius: 50px;
+      background-color: #91C4C3;
       color: white;
-      font-family: 'Jacques Francois Shadow', serif;
       font-size: 1.3rem;
-      transition: transform 0.2s, background-color 0.2s;
+      font-family: 'Jacques Francois Shadow', serif;
       cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
     }
 
     .menu-button:hover {
       background-color: #b8d4e3;
-      transform: translateY(-3px);
-      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+      transform: translateX(-50%) translateY(-3px);
     }
 
     .menu-button:active {
       background-color: #9bbdd2;
-      transform: translateY(1px) scale(0.98);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    /* 📱 Responsive layout for smaller devices */
-    @media (max-width: 900px) {
-      .settings-icon {
-        top: 8.5vh;
-        right: 8vw;
-      }
-
-      .settings-icon img {
-        width: 7vw;
-      }
-
-      h1 {
-        font-size: 3.5rem;
-      }
-
-      h2 {
-        font-size: 1.6rem;
-      }
-
-      .game-container {
-        width: 80%;
-        padding: 15px;
-      }
-
-      .menu-button {
-        width: 28vw;
-      }
+      transform: translateX(-50%) translateY(1px) scale(0.98);
     }
   </style>
 </head>
 
 <body>
-  <!-- ⚙️ Settings icon -->
+  <!-- ⚙️ Settings Icon -->
   <div class="settings-icon">
     <img src="settings-icon.png" alt="Settings Icon" id="settings-btn">
   </div>
 
-  <!-- 🏷 Title -->
+  <!-- 🎯 Title -->
   <h1>MATCH</h1>
   <h2>How To Play</h2>
 
-  <!-- 📘 Instructions -->
+  <!-- 📜 Instructions -->
   <div class="game-container">
     <p>1. Click a card to reveal an image.</p>
     <p>2. Click another to find its match.</p>
@@ -171,19 +140,16 @@
     <p>5. Use the menu to pause, restart, and quit.</p>
   </div>
 
-  <!-- ▶️ Play Now button -->
-  <div class="button-container">
-    <button id="playBtn" class="menu-button">▶ Play Now</button>
-  </div>
+  <!-- ▶️ Play Button -->
+  <button id="playBtn" class="menu-button">▶ Play Now</button>
 
-  <!-- 🎮 Embedded JS -->
   <script>
-    // 🎮 Go to gameplay page
+    // ▶️ Play Now → Gameplay page
     document.getElementById("playBtn").addEventListener("click", () => {
       window.location.href = "gameplay.html";
     });
 
-    // ⚙️ Go to settings page
+    // ⚙️ Settings → Settings Menu
     document.getElementById("settings-btn").addEventListener("click", () => {
       window.location.href = "settings_menu.html";
     });
