@@ -289,7 +289,8 @@ Collect and analyse user feedback via surveys. Update features if needed and reg
 
 | Test No. | Test Description | Action | Expected Outcome | Actual Outcome | Further Actions |
 |----------|------------------|--------------|------------------|----------------|---------|
-|1.1|Launch the game website|Open game URL in browser|Homepage loads successfully with visible 'Start Game' screen|<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/2a58e9fe-3e1e-4cb5-8abd-dbeba3611b42" />|n/a|
+|1.1|Launch the game website|Open game URL in browser|Homepage loads successfully with visible 'Start Game' screen|<img width="1907" height="942" alt="image" src="https://github.com/user-attachments/assets/c7114f74-d907-42f5-8b35-5b40256c2502" />
+ |n/a|
 |1.2|Start a new game|Click on 'Start Game' button|Game board appears with all word tiles displayed|<<img width="1920" height="1020" alt="Screenshot 2025-11-04 020556" src="https://github.com/user-attachments/assets/9ee348ab-340c-4fd1-97fc-1c38d2b27b60" />|n/a|
 |1.3|Select two matching cards|Click on two matching tiles|Both tiles remain revealed when a matching pair is clicked on and colour change is made|Both tiles remain revealed and colour change is made, however, 2 images of the same theme were being 'matched' <img width="948" height="415" alt="Screenshot (1)" src="https://github.com/user-attachments/assets/144d85e4-4a3a-4a93-88ac-8c6d7b7fb688" />|Change the labelling of the classes for each image in order for correct 'match' logic.|
 |1.3 (Retest)|Select two matching cards|Click on two matching tiles|Both tiles remain revealed when a matching pair is clicked on and colour change is made|Both tiles remain revealed when a matching pair is clicked on and colour change is made <img width="948" height="415" alt="image" src="https://github.com/user-attachments/assets/0f1f93f7-0ab8-4891-8cef-ed9736214541" />|n/a|
@@ -299,7 +300,8 @@ Collect and analyse user feedback via surveys. Update features if needed and reg
 |1.7|Double-click same card|Click the same card twice|System ignores second click; no error or crash occurs|System ignores second click; no error or crash occurs|n/a|
 |1.8|Settings menu opens|Click on the Settings icon/button|Settings menu loads successfully, displaying available options|Settings menu loads successfully, displaying available options <img width="947" height="419" alt="image" src="https://github.com/user-attachments/assets/5dc3aa9d-0576-4aa3-bf25-014782898f04" />|n/a|
 |1.9|Restart from Settings menu|In Settings, click Restart Game|Game board resets and starts a new round immediately| Restart button works as expected |n/a|
-|1.10|Main Menu from Settings|In Settings, click Main Menu|Initial home screen or main menu loads| Main menu returns blank page| Error handling attempted with no success|
+|1.10|Main Menu from Settings|In Settings, click Main Menu|Initial home screen or main menu loads| <img width="1907" height="942" alt="image" src="https://github.com/user-attachments/assets/99acbb09-2288-489c-b8ac-e8ffb5b0f6cc" />
+| Successful|
 |1.11|Quit Game option|In Settings, click Quit Game|Game session closes and user exits game (or returns to exit confirmation screen)| <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/334466e5-687c-4982-85fe-20852b7e479c" />|n/a|
 |1.12|Complete all matches|Match all pairs successfully|“You Win!” screen is loaded with number of moves displayed|“You Win!” screen is loaded with number of moves displayed <img width="948" height="415" alt="Screenshot 2025-11-01 215550" src="https://github.com/user-attachments/assets/41e1e447-3ba8-4250-a512-2bbc1785cda7" />|n/a|
 
