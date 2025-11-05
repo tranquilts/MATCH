@@ -17,26 +17,24 @@ body {
     /* Border around the whole page */
     border: 15px solid #91C1C4;
     box-sizing: border-box; /* ensures border doesn't cause scrollbars */
+    padding:28px;
 }
 
 h1 {
     font-family: 'Jacques Francois Shadow', serif;
     color: #80A1BA;
-    font-size: 5rem;
+    font-size: 64px;
     text-align: center;
-    margin: 0;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 0 8px 0;
+    position: static;
 }
 
 h2 {
     font-family: 'Jacques Francois Shadow', serif;
     font-size: 36px;
     color: #4A6C6F;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Game container box */
@@ -47,9 +45,6 @@ h2 {
     border-radius: 10px;
     width: 500px;
     height: 390px;
-    top: 10px;
-    left: auto;
-    transform: none;
     margin-top: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional soft shadow */
 }
