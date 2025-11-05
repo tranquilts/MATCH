@@ -1,7 +1,14 @@
+
+
 function goToMainMenu(){
     window.location.href = "menu.html"; // goes to main menu page
 }
-@@ -10,10 +12,15 @@ function quitGame(){
+
+function resetGame(){
+    window.location.href = "gameplay.html"; // restarts the game
+}
+
+function quitGame(){
     window.location.href = "goodbye.html"; // goes to goodbye page
 }
 
