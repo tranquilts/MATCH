@@ -232,6 +232,8 @@ The gameplay page presents the MATCH game screen to the user in order to start p
 <img width="2500" height="1257" alt="image" src="https://github.com/user-attachments/assets/56cd1531-4282-4e18-9be6-bed21b7454be" />
 
 ### Settings Page
+<img width="554" height="295" alt="image" src="https://github.com/user-attachments/assets/a8561b96-488f-47a4-8e5a-866fad904a06" />
+
 
 ### Congrats Page
 The congrats page presents a congrats message/animation to the user and shows the total number of moves alongside a 'play again'.
@@ -287,27 +289,31 @@ Collect and analyse user feedback via surveys. Update features if needed and reg
 
 | Test No. | Test Description | Action | Expected Outcome | Actual Outcome | Further Actions |
 |----------|------------------|--------------|------------------|----------------|---------|
-|1.1|Launch the game website|Open game URL in browser|Homepage loads successfully with visible 'Start Game' screen| | |
-|1.2|Start a new game|Click on 'Start Game' button|Game board appears with all word tiles displayed| | |
+|1.1|Launch the game website|Open game URL in browser|Homepage loads successfully with visible 'Start Game' screen|<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/2a58e9fe-3e1e-4cb5-8abd-dbeba3611b42" />|n/a|
+|1.2|Start a new game|Click on 'Start Game' button|Game board appears with all word tiles displayed|<<img width="1920" height="1020" alt="Screenshot 2025-11-04 020556" src="https://github.com/user-attachments/assets/9ee348ab-340c-4fd1-97fc-1c38d2b27b60" />|n/a|
 |1.3|Select two matching cards|Click on two matching tiles|Both tiles remain revealed when a matching pair is clicked on and colour change is made|Both tiles remain revealed and colour change is made, however, 2 images of the same theme were being 'matched' <img width="948" height="415" alt="Screenshot (1)" src="https://github.com/user-attachments/assets/144d85e4-4a3a-4a93-88ac-8c6d7b7fb688" />|Change the labelling of the classes for each image in order for correct 'match' logic.|
 |1.3 (Retest)|Select two matching cards|Click on two matching tiles|Both tiles remain revealed when a matching pair is clicked on and colour change is made|Both tiles remain revealed when a matching pair is clicked on and colour change is made <img width="948" height="415" alt="image" src="https://github.com/user-attachments/assets/0f1f93f7-0ab8-4891-8cef-ed9736214541" />|n/a|
 |1.4|Select two non-matching cards|Click on two different tiles|Tiles flip back after a short delay|Tiles flip back after a short delay|n/a|
 |1.5|Number of moves tracking|Click multiple pairs (both correct and incorrect)|Move counter increases by one after every two card selections and displays accurate count|Move counter increases by one after every two card selections and displays accurate count <img width="948" height="415" alt="Screenshot 2025-11-01 143208" src="https://github.com/user-attachments/assets/df586029-7c1b-47ba-98d2-017a2d4dd5ba" />|n/a|
 |1.6|Number of pairs tracking|Make correct matches one by one|Pair counter increases by one for each successful match and displays total correctly|Pair counter increases by one for each successful match and displays total correctly <img width="948" height="415" alt="Screenshot 2025-11-01 144607" src="https://github.com/user-attachments/assets/86aadafc-ca6d-40a3-8fbc-83ca2b6c3081" />|n/a|
 |1.7|Double-click same card|Click the same card twice|System ignores second click; no error or crash occurs|System ignores second click; no error or crash occurs|n/a|
-|1.8|Settings menu opens|Click on the Settings icon/button|Settings menu loads successfully, displaying available options| | |
+|1.8|Settings menu opens|Click on the Settings icon/button|Settings menu loads successfully, displaying available options|Settings menu loads successfully, displaying available options <img width="947" height="419" alt="image" src="https://github.com/user-attachments/assets/5dc3aa9d-0576-4aa3-bf25-014782898f04" />|n/a|
 |1.9|Restart from Settings menu|In Settings, click Restart Game|Game board resets and starts a new round immediately| Restart button works as expected |n/a|
-|1.10|Main Menu from Settings|In Settings, click Main Menu|Initial home screen or main menu loads| Main menu button works as expected |n/a|
-|1.11|Quit Game option|In Settings, click Quit Game|Game session closes and user exits game (or returns to exit confirmation screen)| Quit button works as expected |n/a|
+|1.10|Main Menu from Settings|In Settings, click Main Menu|Initial home screen or main menu loads| Main menu returns blank page| Error handling attempted with no success|
+|1.11|Quit Game option|In Settings, click Quit Game|Game session closes and user exits game (or returns to exit confirmation screen)| <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/334466e5-687c-4982-85fe-20852b7e479c" />|n/a|
 |1.12|Complete all matches|Match all pairs successfully|“You Win!” screen is loaded with number of moves displayed|“You Win!” screen is loaded with number of moves displayed <img width="948" height="415" alt="Screenshot 2025-11-01 215550" src="https://github.com/user-attachments/assets/41e1e447-3ba8-4250-a512-2bbc1785cda7" />|n/a|
 
 
 ## Individual Contributions
-Rushda - I helped create the 'gameplay' section for the project, creating the initial wireframe and then coding a 4x4 grid of green tiles. When the user clicks on the tile, it flips around and presents the image. Thereafter, the user must find the matching tiles. Alongside this, I added the 'Number of Moves' element as well as 'Number of Pairs' where the user can see how many moves they've made and how many pairs they've made/have left. I further created the congrats page, where the user is presented with the 'Congrats' message and is presented their total number of moves along with an option to play again, where they are bought back to the gameplay screen.
+Rushda - I helped create the 'gameplay' section for the project, creating the initial wireframe and then coding a 4x4 grid of green tiles. When the user clicks on the tile, it flips around and presents the image. Thereafter, the user must find the matching tiles. Alongside this, I added the 'Number of Moves' element as well as 'Number of Pairs' where the user can see how many moves they've made and how many pairs they've made/have left. I further created the congrats page, where the user is presented with the 'Congrats' message and is presented their total number of moves along with an option to play again, where they are bought back to the gameplay screen. I also created the operating system environment, usability, and basic needs. Finally, I created the test table and highlighted the success of our project at the end.
 
-Khadijah -
+Khadijah - I created the 'menu' section for the project, composing the initial wireframe and then attaching the settings menu and initialising gameplay. When the user clicks on the platy button, the game loads and presents the game screen. I created the risk management table, non-functional specifications on ease of use, feedback style, application functions and application functions for the game.
 
 Hafsah -
+- Created pause/ settings menu
+- updated corresponding parts of the readme file
+- Created software development strategy
+- Created a goodbye page for when users quit the game.
 
 ## Success of Project
-Overall, the project successfully met all the set requirements, delivering a smooth, responsive, and user-friendly single-player game that runs directly in the browser without downloads. The interface is simple and intuitive, allowing users to start, restart, or quit the game easily via the settings menu, while accurate move and pair counters, clear feedback when matches are made, and an end message enhance gameplay clarity. The inclusion of accessible rules and responsive design ensures usability across desktop, tablet, and mobile devices. The game effectively caters to both user personas — providing the clarity and professionalism preferred by Persona 1 and the efficiency and interactivity valued by Persona 2. Although currently limited to single-player mode, the system performs reliably and achieves its intended purpose, making the project an overall success.
+Overall, the project successfully met all the set requirements, delivering a smooth, responsive, and user-friendly single-player game that runs directly in the browser without downloads. The interface is simple and intuitive, allowing users to restart, or quit the game easily via the settings menu, while accurate move and pair counters, clear feedback when matches are made, and an end message enhance gameplay clarity. The inclusion of accessible rules and responsive design ensures usability across desktop, tablet, and mobile devices. The game effectively caters to both user personas — providing the clarity and professionalism preferred by Persona 1 and the efficiency and interactivity valued by Persona 2. Although currently limited to single-player mode, the system performs reliably and achieves its intended purpose, making the project an overall success. An area of improvement involves ensuring players can return to the main menu easily. 
