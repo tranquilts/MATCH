@@ -23,7 +23,7 @@
       padding: 0;
       overflow: hidden;
       background-color: #fff7dd;
-      border: 15px solid #91c1c4;
+      border: 15px solid #91c1c4; /*Outer border */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -33,12 +33,12 @@
       position: relative;
     }
 
-    /* ⚙️ Settings Icon */
+    /* ⚙️ Settings top-right */
     .settings-icon {
       position: absolute;
-      top: 85px;
-      right: 100px;
-      z-index: 1000; /* ensures icon is clickable on all browsers */
+      top: 25px; /* moved higher up */
+      right: 25px; /* tighter to top-right corner */
+      z-index: 1000;
     }
 
     .settings-icon img {
@@ -57,7 +57,7 @@
       font-family: 'Jacques Francois Shadow', serif;
       font-size: 5rem;
       color: #80a1ba;
-      margin-top: 60px;
+      margin-top: 100px;
       margin-bottom: 0;
     }
 
@@ -69,13 +69,14 @@
       margin: 10px 0 25px 0;
     }
 
-    /* Instruction text */
+    /* Instruction text (no border, just centered nicely) */
     p {
       font-family: 'Itim', sans-serif;
       font-size: 20px;
       color: black;
       margin: 8px 0;
       line-height: 1.4em;
+      max-width: 600px;
     }
 
     /* ▶ Play Now Button */
@@ -115,8 +116,13 @@
       }
 
       .settings-icon {
-        top: 65px;
-        right: 60px;
+        top: 15px;
+        right: 15px;
+      }
+
+      p {
+        font-size: 18px;
+        max-width: 85%;
       }
     }
   </style>
@@ -144,9 +150,8 @@
 
   <script>
     // ✅ Universal navigation script
-    // Works on Windows, Mac, Android, iOS, etc.
 
-    // Play Now → Gameplay
+    // ▶ Play Now → Gameplay
     document.getElementById('playBtn').addEventListener('click', () => {
       try {
         window.location.href = 'gameplay.html';
