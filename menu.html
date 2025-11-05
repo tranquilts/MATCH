@@ -6,23 +6,17 @@
   <title>MATCH</title>
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
   <style>
-    /* Base Layout  */
+    /* Base Layout */
     html, body {
       height: 100%;
       margin: 0;
       padding: 0;
       background-color: #FFF7DD;
-      border: 15px solid #91C1C4; /* outer page border */
+      border: 15px solid #91C1C4; /*outer border */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -33,16 +27,19 @@
       position: relative;
     }
 
-    /* ⚙️ Settings Icon (top-right) */
+    /* ⚙️ Settings Icon */
+    .settings-icon {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      z-index: 1000;
+    }
+
     .settings-icon img {
-      position: fixed;
-      top: 15px;
-      right: 15px;
       width: 55px;
       height: 55px;
       cursor: pointer;
       transition: transform 0.2s ease;
-      z-index: 2000;
     }
 
     .settings-icon img:hover {
@@ -66,28 +63,27 @@
       margin: 10px 0 25px 0;
     }
 
-    /* Instruction text */
+    /* Instruction text with no border*/
     .instructions {
-      max-width: 600px;
       text-align: center;
       font-size: 20px;
       color: black;
       line-height: 1.5em;
-      margin-bottom: 30px;
-
-      /* All possible borders or boxes */
-      border: none !important;
-      background: none !important;
-      box-shadow: none !important;
-      outline: none !important;
+      margin: 0 auto 30px auto;
+      padding: 0;          /* remove excess spacing */
+      border: none;        /*  no border */
+      background: none;    /* no background */
+      box-shadow: none;    /* no shadow */
+      outline: none;       /* no outline */
     }
 
     .instructions p {
       margin: 8px 0;
-      border: none !important;
-      background: none !important;
-      box-shadow: none !important;
-      outline: none !important;
+      padding: 0;
+      border: none;
+      background: none;
+      box-shadow: none;
+      outline: none;
     }
 
     /* ▶ Play Now Button */
@@ -115,7 +111,7 @@
       transform: translateY(1px) scale(0.98);
     }
 
-    /* Responsive Adjustments */
+    /* Responsive */
     @media (max-width: 900px) {
       h1 {
         font-size: 3.5rem;
@@ -128,24 +124,24 @@
       }
 
       .instructions {
-        max-width: 85%;
         font-size: 18px;
+        max-width: 85%;
       }
     }
   </style>
 </head>
 
 <body>
-  <!-- ⚙️ Settings Icon -->
+  /*settings icon
   <div class="settings-icon">
-    <img src="settings-icon.png" alt="Settings Icon" id="menu-btn" />
+    <img src="settings-icon.png" alt="Settings Icon" id="menu-btn">
   </div>
 
 
   <h1>MATCH</h1>
   <h2>How To Play</h2>
 
-  <!-- Instructions (no border, background, or shadow) -->
+  <!-- Instructions — no box, no background -->
   <div class="instructions">
     <p>1. Click a card to reveal an image.</p>
     <p>2. Click another to find its match.</p>
@@ -154,7 +150,7 @@
     <p>5. Use the menu to pause, restart and quit.</p>
   </div>
 
-  
+  <!-- ▶ Play Now -->
   <button id="playBtn" class="menu-button">▶ Play Now</button>
 
   <script>
@@ -168,7 +164,7 @@
       window.location.href = 'settings_menu.html';
     });
 
-    // Error handling
+    // Prevents view reload issues
     window.addEventListener('pageshow', (event) => {
       if (event.persisted) window.location.reload();
     });
