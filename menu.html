@@ -23,7 +23,7 @@
       padding: 0;
       overflow: hidden;
       background-color: #fff7dd;
-      border: 15px solid #91c1c4; /*Outer border */
+      border: 15px solid #91c1c4; /* ✅ outer frame only */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -31,25 +31,6 @@
       box-sizing: border-box;
       font-family: 'Itim', sans-serif;
       position: relative;
-    }
-
-    /* ⚙️ Settings top-right */
-    .settings-icon {
-      position: absolute;
-      top: 25px; /* moved higher up */
-      right: 25px; /* tighter to top-right corner */
-      z-index: 1000;
-    }
-
-    .settings-icon img {
-      width: 55px;
-      height: 55px;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
-
-    .settings-icon img:hover {
-      transform: scale(1.1);
     }
 
     /* Title */
@@ -69,7 +50,7 @@
       margin: 10px 0 25px 0;
     }
 
-    /* Instruction text (no border, just centered nicely) */
+    /* Instruction text (no borders) */
     p {
       font-family: 'Itim', sans-serif;
       font-size: 20px;
@@ -104,20 +85,16 @@
       transform: translateY(1px) scale(0.98);
     }
 
-    /* Responsive layout for smaller screens */
+    /* Responsive layout */
     @media (max-width: 900px) {
       h1 {
         font-size: 3.5rem;
+        margin-top: 60px;
       }
 
       .menu-button {
         width: 60%;
         font-size: 18px;
-      }
-
-      .settings-icon {
-        top: 15px;
-        right: 15px;
       }
 
       p {
@@ -131,14 +108,28 @@
 <body>
   <!-- ⚙️ Settings Icon -->
   <div class="settings-icon">
-    <img src="settings-icon.png" alt="Settings Icon" id="menu-btn" />
+    <!-- ✅ Inline style ensures it's always top-right -->
+    <img 
+      src="settings-icon.png" 
+      alt="Settings Icon" 
+      id="menu-btn"
+      style="
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        width: 55px;
+        height: 55px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        z-index: 2000;"
+    />
   </div>
 
   <!-- Title and Subtitle -->
   <h1>MATCH</h1>
   <h2>How To Play</h2>
 
-  <!-- Instructions -->
+  <!-- Instructions (no border or background box) -->
   <p>1. Click a card to reveal an image.</p>
   <p>2. Click another to find its match.</p>
   <p>3. Matches stay up; mismatches flip back.</p>
@@ -149,7 +140,7 @@
   <button id="playBtn" class="menu-button">▶ Play Now</button>
 
   <script>
-    // ✅ Universal navigation script
+    // ✅ Universal navigation script — works everywhere
 
     // ▶ Play Now → Gameplay
     document.getElementById('playBtn').addEventListener('click', () => {
