@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MATCH</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+    rel="stylesheet"
+  />
 
   <style>
-    html, body {
+    html,
+    body {
       height: 100%;
       margin: 0;
       padding: 0;
       overflow: hidden;
-    }
-
-    body {
-      background-color: #FFF7DD;
-      border: 15px solid #91C1C4;
+      background-color: #fff7dd;
+      border: 15px solid #91c1c4;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -34,6 +38,7 @@
       position: absolute;
       top: 85px;
       right: 100px;
+      z-index: 1000; /* ensures icon is clickable on all browsers */
     }
 
     .settings-icon img {
@@ -51,7 +56,7 @@
     h1 {
       font-family: 'Jacques Francois Shadow', serif;
       font-size: 5rem;
-      color: #80A1BA;
+      color: #80a1ba;
       margin-top: 60px;
       margin-bottom: 0;
     }
@@ -62,8 +67,6 @@
       color: black;
       font-size: 1.8rem;
       margin: 10px 0 25px 0;
-    }
-
     }
 
     /* Instruction text */
@@ -80,14 +83,13 @@
       width: 220px;
       padding: 14px 0;
       font-size: 22px;
-      background-color: #91C4C3;
+      background-color: #91c4c3;
       color: white;
       border: none;
       border-radius: 50px;
       cursor: pointer;
-      margin-top: 25px; /* spacing from last line */
+      margin-top: 25px;
       transition: transform 0.2s, background-color 0.2s;
-      font-family: 'Jacques Francois Shadow', serif;
       font-family: 'Itim', sans-serif;
     }
 
@@ -101,7 +103,7 @@
       transform: translateY(1px) scale(0.98);
     }
 
-    /* adapts to smaller devices */
+    /* Responsive layout for smaller screens */
     @media (max-width: 900px) {
       h1 {
         font-size: 3.5rem;
@@ -123,7 +125,7 @@
 <body>
   <!-- ⚙️ Settings Icon -->
   <div class="settings-icon">
-    <img src="settings-icon.png" alt="Settings Icon" id="settings-btn">
+    <img src="settings-icon.png" alt="Settings Icon" id="menu-btn" />
   </div>
 
   <!-- Title and Subtitle -->
@@ -131,32 +133,40 @@
   <h2>How To Play</h2>
 
   <!-- Instructions -->
-    <p>1. Click a card to reveal an image.</p>
-    <p>2. Click another to find its match.</p>
-    <p>3. Matches stay up; mismatches flip back.</p>
-    <p>4. Match all cards to win!</p>
-    <p>5. Use the menu to pause, restart and quit.</p>
+  <p>1. Click a card to reveal an image.</p>
+  <p>2. Click another to find its match.</p>
+  <p>3. Matches stay up; mismatches flip back.</p>
+  <p>4. Match all cards to win!</p>
+  <p>5. Use the menu to pause, restart and quit.</p>
 
-    <!-- ▶ Play Now -->
-    <button id="playBtn" class="menu-button">▶ Play Now</button>
-  </div>
+  <!-- ▶ Play Now -->
+  <button id="playBtn" class="menu-button">▶ Play Now</button>
 
   <script>
-    // 🎮 Go to gameplay page
-    document.getElementById("playBtn").addEventListener("click", () => {
-      window.location.href = "gameplay.html";
-    });
+    // ✅ Universal navigation script
+    // Works on Windows, Mac, Android, iOS, etc.
 
-    // ⚙️ Go to settings page
-    document.getElementById("settings-btn").addEventListener("click", () => {
-      window.location.href = "settings_menu.html";
-    });
-
-    // 🔁 Allow instant reload when redirected back
-    window.addEventListener("pageshow", (event) => {
-      if (event.persisted) {
-        window.location.reload();
+    // Play Now → Gameplay
+    document.getElementById('playBtn').addEventListener('click', () => {
+      try {
+        window.location.href = 'gameplay.html';
+      } catch (e) {
+        alert('Unable to load gameplay page. Please ensure gameplay.html is in the same folder.');
       }
+    });
+
+    // ⚙️ Settings Icon → Settings Menu
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      try {
+        window.location.href = 'settings_menu.html';
+      } catch (e) {
+        alert('Unable to load settings page. Please ensure settings_menu.html is in the same folder.');
+      }
+    });
+
+    // Prevent caching issues when navigating back
+    window.addEventListener('pageshow', (event) => {
+      if (event.persisted) window.location.reload();
     });
   </script>
 </body>
