@@ -10,20 +10,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
   <style>
-    /* Base Layout */
-    html, body {
+    /* === Page Setup === */
+    html {
       height: 100%;
       margin: 0;
       padding: 0;
       background-color: #FFF7DD;
-      border: 15px solid #91C1C4; /*outer border */
+    }
+
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #FFF7DD;
+      border: 15px solid #91C1C4; /* ✅ border only on body */
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: flex-start;
       text-align: center;
       font-family: 'Itim', sans-serif;
-      overflow: hidden;
       box-sizing: border-box;
+      overflow: hidden;
       position: relative;
     }
 
@@ -63,15 +71,28 @@
       margin: 10px 0 25px 0;
     }
 
-   
+    /* Instructions (no container or border) */
     .instructions {
-      text-align: center;
       font-size: 20px;
       color: black;
       line-height: 1.5em;
+      text-align: center;
+      margin-bottom: 30px;
+      max-width: 600px;
+      padding: 0;
+      border: none;
+      background: none;
+      box-shadow: none;
+      outline: none;
     }
 
-  
+    .instructions p {
+      margin: 8px 0;
+      padding: 0;
+      border: none;
+      background: none;
+      box-shadow: none;
+      outline: none;
     }
 
     /* ▶ Play Now Button */
@@ -99,7 +120,7 @@
       transform: translateY(1px) scale(0.98);
     }
 
-    /* Responsive */
+    /* Responsive adjustments */
     @media (max-width: 900px) {
       h1 {
         font-size: 3.5rem;
@@ -115,21 +136,26 @@
         font-size: 18px;
         max-width: 85%;
       }
+
+      .settings-icon {
+        top: 15px;
+        right: 15px;
+      }
     }
   </style>
 </head>
 
 <body>
-
+  <!-- ⚙️ Settings Icon -->
   <div class="settings-icon">
     <img src="settings-icon.png" alt="Settings Icon" id="menu-btn">
   </div>
 
-
+  <!-- Title and Subtitle -->
   <h1>MATCH</h1>
   <h2>How To Play</h2>
 
-  <!-- Instructions — no box, no background -->
+  <!-- Instructions (no border container) -->
   <div class="instructions">
     <p>1. Click a card to reveal an image.</p>
     <p>2. Click another to find its match.</p>
@@ -138,7 +164,7 @@
     <p>5. Use the menu to pause, restart and quit.</p>
   </div>
 
-  <!-- ▶ Play Now -->
+  <!-- ▶ Play Now Button -->
   <button id="playBtn" class="menu-button">▶ Play Now</button>
 
   <script>
@@ -152,7 +178,7 @@
       window.location.href = 'settings_menu.html';
     });
 
-    // Prevents view reload issues
+    // Prevent caching issues when going back
     window.addEventListener('pageshow', (event) => {
       if (event.persisted) window.location.reload();
     });
