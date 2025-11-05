@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MATCH</title>
 
-  /*Google Fonts* /
+  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap"
     rel="stylesheet"
@@ -16,37 +16,33 @@
   />
 
   <style>
-    /* Main Page Styling */
-    html,
-    body {
+    /* Base Layout  */
+    html, body {
       height: 100%;
       margin: 0;
       padding: 0;
-      overflow: hidden;
-      background-color: #fff7dd;
-      border: 15px solid #91c1c4; /* Borders the screen */
+      background-color: #FFF7DD;
+      border: 15px solid #91C1C4; /* outer page border */
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      box-sizing: border-box;
       font-family: 'Itim', sans-serif;
+      overflow: hidden;
+      box-sizing: border-box;
       position: relative;
     }
 
-    /* Settings Icon */
-    .settings-icon {
-      position: absolute;
-      top: 25px;
-      right: 25px;
-      z-index: 1000;
-    }
-
+    /* ⚙️ Settings Icon (top-right) */
     .settings-icon img {
+      position: fixed;
+      top: 15px;
+      right: 15px;
       width: 55px;
       height: 55px;
       cursor: pointer;
       transition: transform 0.2s ease;
+      z-index: 2000;
     }
 
     .settings-icon img:hover {
@@ -57,12 +53,12 @@
     h1 {
       font-family: 'Jacques Francois Shadow', serif;
       font-size: 5rem;
-      color: #80a1ba;
+      color: #80A1BA;
       margin-top: 100px;
       margin-bottom: 0;
     }
 
-    /* Subheading */
+    /* Subtitle */
     h2 {
       font-family: 'Itim', sans-serif;
       color: black;
@@ -70,7 +66,7 @@
       margin: 10px 0 25px 0;
     }
 
-    /* Instructions */
+    /* Instruction text */
     .instructions {
       max-width: 600px;
       text-align: center;
@@ -78,12 +74,20 @@
       color: black;
       line-height: 1.5em;
       margin-bottom: 30px;
-    
+
+      /* All possible borders or boxes */
+      border: none !important;
+      background: none !important;
+      box-shadow: none !important;
+      outline: none !important;
     }
 
     .instructions p {
       margin: 8px 0;
-  
+      border: none !important;
+      background: none !important;
+      box-shadow: none !important;
+      outline: none !important;
     }
 
     /* ▶ Play Now Button */
@@ -91,7 +95,7 @@
       width: 220px;
       padding: 14px 0;
       font-size: 22px;
-      background-color: #91c4c3;
+      background-color: #91C4C3;
       color: white;
       border: none;
       border-radius: 50px;
@@ -111,7 +115,7 @@
       transform: translateY(1px) scale(0.98);
     }
 
-    /* Adaptive according to dimensions */
+    /* Responsive Adjustments */
     @media (max-width: 900px) {
       h1 {
         font-size: 3.5rem;
@@ -127,11 +131,6 @@
         max-width: 85%;
         font-size: 18px;
       }
-
-      .settings-icon {
-        top: 15px;
-        right: 15px;
-      }
     }
   </style>
 </head>
@@ -142,11 +141,11 @@
     <img src="settings-icon.png" alt="Settings Icon" id="menu-btn" />
   </div>
 
- 
+
   <h1>MATCH</h1>
   <h2>How To Play</h2>
 
-  /* Instructions (no border, no background)*/
+  <!-- Instructions (no border, background, or shadow) -->
   <div class="instructions">
     <p>1. Click a card to reveal an image.</p>
     <p>2. Click another to find its match.</p>
@@ -155,21 +154,21 @@
     <p>5. Use the menu to pause, restart and quit.</p>
   </div>
 
-  <!-- ▶ Play Now -- (interactive button to load gameplay)!>
+  
   <button id="playBtn" class="menu-button">▶ Play Now</button>
 
   <script>
-    // ▶ Play Now → Gameplay (navigation)
+    // ▶ Play Now → Gameplay
     document.getElementById('playBtn').addEventListener('click', () => {
       window.location.href = 'gameplay.html';
     });
 
-    // ⚙ Settings → Settings Menu (navigation)
+    // ⚙️ Settings Icon → Settings Menu
     document.getElementById('menu-btn').addEventListener('click', () => {
       window.location.href = 'settings_menu.html';
     });
 
-    // *Prevent issues*
+    // Error handling
     window.addEventListener('pageshow', (event) => {
       if (event.persisted) window.location.reload();
     });
