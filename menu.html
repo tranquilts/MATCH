@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MATCH</title>
 
-  <!-- Google Fonts -->
+  /*Google Fonts* /
   <link
     href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap"
     rel="stylesheet"
@@ -16,6 +16,7 @@
   />
 
   <style>
+    /* Main Page Styling */
     html,
     body {
       height: 100%;
@@ -23,7 +24,7 @@
       padding: 0;
       overflow: hidden;
       background-color: #fff7dd;
-      border: 15px solid #91c1c4; /* ✅ outer frame only */
+      border: 15px solid #91c1c4; /* Borders the screen */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -31,6 +32,25 @@
       box-sizing: border-box;
       font-family: 'Itim', sans-serif;
       position: relative;
+    }
+
+    /* Settings Icon */
+    .settings-icon {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      z-index: 1000;
+    }
+
+    .settings-icon img {
+      width: 55px;
+      height: 55px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .settings-icon img:hover {
+      transform: scale(1.1);
     }
 
     /* Title */
@@ -42,7 +62,7 @@
       margin-bottom: 0;
     }
 
-    /* Subtitle */
+    /* Subheading */
     h2 {
       font-family: 'Itim', sans-serif;
       color: black;
@@ -50,14 +70,25 @@
       margin: 10px 0 25px 0;
     }
 
-    /* Instruction text (no borders) */
-    p {
-      font-family: 'Itim', sans-serif;
+    /* Instructions */
+    .instructions {
+      max-width: 600px;
+      text-align: center;
       font-size: 20px;
       color: black;
+      line-height: 1.5em;
+      margin-bottom: 30px;
+      /*No border, background or box around the text */
+      border: none;
+      background: none;
+      box-shadow: none;
+    }
+
+    .instructions p {
       margin: 8px 0;
-      line-height: 1.4em;
-      max-width: 600px;
+      border: none;
+      background: none;
+      box-shadow: none;
     }
 
     /* ▶ Play Now Button */
@@ -70,7 +101,7 @@
       border: none;
       border-radius: 50px;
       cursor: pointer;
-      margin-top: 25px;
+      margin-top: 10px;
       transition: transform 0.2s, background-color 0.2s;
       font-family: 'Itim', sans-serif;
     }
@@ -85,7 +116,7 @@
       transform: translateY(1px) scale(0.98);
     }
 
-    /* Responsive layout */
+    /* Adaptive according to dimensions */
     @media (max-width: 900px) {
       h1 {
         font-size: 3.5rem;
@@ -97,9 +128,14 @@
         font-size: 18px;
       }
 
-      p {
-        font-size: 18px;
+      .instructions {
         max-width: 85%;
+        font-size: 18px;
+      }
+
+      .settings-icon {
+        top: 15px;
+        right: 15px;
       }
     }
   </style>
@@ -108,59 +144,37 @@
 <body>
   <!-- ⚙️ Settings Icon -->
   <div class="settings-icon">
-    <!-- ✅ Inline style ensures it's always top-right -->
-    <img 
-      src="settings-icon.png" 
-      alt="Settings Icon" 
-      id="menu-btn"
-      style="
-        position: fixed;
-        top: 15px;
-        right: 15px;
-        width: 55px;
-        height: 55px;
-        cursor: pointer;
-        transition: transform 0.2s ease;
-        z-index: 2000;"
-    />
+    <img src="settings-icon.png" alt="Settings Icon" id="menu-btn" />
   </div>
 
-  <!-- Title and Subtitle -->
+  < --Title and Subtitle-- >
   <h1>MATCH</h1>
   <h2>How To Play</h2>
 
-  <!-- Instructions (no border or background box) -->
-  <p>1. Click a card to reveal an image.</p>
-  <p>2. Click another to find its match.</p>
-  <p>3. Matches stay up; mismatches flip back.</p>
-  <p>4. Match all cards to win!</p>
-  <p>5. Use the menu to pause, restart and quit.</p>
+  /* Instructions (no border, no background)*/
+  <div class="instructions">
+    <p>1. Click a card to reveal an image.</p>
+    <p>2. Click another to find its match.</p>
+    <p>3. Matches stay up; mismatches flip back.</p>
+    <p>4. Match all cards to win!</p>
+    <p>5. Use the menu to pause, restart and quit.</p>
+  </div>
 
-  <!-- ▶ Play Now -->
+  <!-- ▶ Play Now -- (interactive button to load gameplay)!>
   <button id="playBtn" class="menu-button">▶ Play Now</button>
 
   <script>
-    // ✅ Universal navigation script — works everywhere
-
-    // ▶ Play Now → Gameplay
+    // ▶ Play Now → Gameplay (navigation)
     document.getElementById('playBtn').addEventListener('click', () => {
-      try {
-        window.location.href = 'gameplay.html';
-      } catch (e) {
-        alert('Unable to load gameplay page. Please ensure gameplay.html is in the same folder.');
-      }
+      window.location.href = 'gameplay.html';
     });
 
-    // ⚙️ Settings Icon → Settings Menu
+    // ⚙ Settings → Settings Menu (navigation)
     document.getElementById('menu-btn').addEventListener('click', () => {
-      try {
-        window.location.href = 'settings_menu.html';
-      } catch (e) {
-        alert('Unable to load settings page. Please ensure settings_menu.html is in the same folder.');
-      }
+      window.location.href = 'settings_menu.html';
     });
 
-    // Prevent caching issues when navigating back
+    // *Prevent issues*
     window.addEventListener('pageshow', (event) => {
       if (event.persisted) window.location.reload();
     });
